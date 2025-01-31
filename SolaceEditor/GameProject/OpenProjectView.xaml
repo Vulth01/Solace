@@ -10,18 +10,18 @@
 
     <!-- CREATE PROJECT WINDOW -->
 
-    <StackPanel Background="LightSteelBlue">
+    <StackPanel Background="#5C6898">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <ListBox Width="195" Height="250"/>
-            <Border Width="400" Height="250" Margin="5,0,0,0"/>
+            <ListBox Width="195" Height="250" Background="#D1D5FA"/>
+            <Border Width="400" Height="300" Margin="5,0,0,0"/>
         </StackPanel>
 
 
 
         <!-- BUTTONS -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0" >
-            <Button Content="Open" Width="96" IsDefault="True"/>
-            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <Button Content="Open" Width="96" IsDefault="True" Background="#A0DDFF"/>
+            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True" Background="#A0DDFF"/>
         </StackPanel>
 
     </StackPanel>

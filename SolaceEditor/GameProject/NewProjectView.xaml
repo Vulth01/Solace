@@ -14,11 +14,12 @@
 
     <!-- NEW PROJECT WINDOW -->
 
-    <StackPanel Background="Lavender">
+    <StackPanel Background="#5C6898">
 
         <!-- IMAGES -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <ListBox Width="195" Height="250" ItemsSource="{Binding ProjectTemplates}" x:Name="templateListBox">
+            <ListBox Width="195" Height="250" ItemsSource="{Binding ProjectTemplates}" 
+                     x:Name="templateListBox" Background= "#FDB3CA">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -28,7 +29,7 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <Border Width="400" Height="250" Margin="5,0,0,0">
+            <Border Width="400" Height="300" Margin="5,0,0,0">
                 <Border.Background>
                     <ImageBrush ImageSource="{Binding Path=SelectedItem.Screenshot, ElementName=templateListBox}"/>
                 </Border.Background>
@@ -50,8 +51,8 @@
 
         <!-- BUTTONS -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0" >
-            <Button Content="Create" Width="96" IsDefault="True"/>
-            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True"/>
+            <Button Content="Create" Width="96" IsDefault="True" Background="#A0DDFF"/>
+            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True" Background="#A0DDFF"/>
         </StackPanel>
 
     </StackPanel>

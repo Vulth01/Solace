@@ -84,7 +84,7 @@ namespace SolaceEditor.GameProject
                         var template = Serializer.FromFile<ProjectTemplate>(templateFile);
                         template.IconFilePath = Path.GetFullPath(Path.Combine(directory, "Icon.png"));
                         template.Icon = File.ReadAllBytes(template.IconFilePath);
-                        template.ScreenshotFilePath = Path.GetFullPath(Path.Combine(directory, "Screenshot.png"));
+                        template.ScreenshotFilePath = Path.GetFullPath(Path.Combine(directory, "template_img.png"));
                         template.Screenshot = File.ReadAllBytes(template.ScreenshotFilePath);
                         template.ProjectFilePath = Path.GetFullPath(Path.Combine(directory, template.ProjectFile));
 
