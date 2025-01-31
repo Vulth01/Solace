@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SolaceEditor.GameProject.NewProjectView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SolaceEditor.GameProject"
+             mc:Ignorable="d" Width="800"
+             d:DataContext="{d:DesignInstance Type=local:NewProject, IsDesignTimeCreatable=True}"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <local:NewProject />
+    </UserControl.DataContext>
+
+    <!-- NEW PROJECT WINDOW -->
+
+    <StackPanel Background="Lavender">
+
+        <!-- IMAGES -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <ListBox Width="195" Height="250" ItemsSource="{Binding ProjectTemplates}" x:Name="templateListBox">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Icon}" Width="32" Height="32" Margin="0,0,5,0"/>
+                            <TextBlock Text="{Binding ProjectType}" FontSize="12"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Border Width="400" Height="250" Margin="5,0,0,0">
+                <Border.Background>
+                    <ImageBrush ImageSource="{Binding Path=SelectedItem.Screenshot, ElementName=templateListBox}"/>
+                </Border.Background>
+            </Border>
+        </StackPanel>
+
+        <!-- NAME -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <TextBlock Text="Name" Width="50"/>
+            <TextBox Width="550" Text="{Binding ProjectName}"/>
+        </StackPanel>
+
+        <!-- PATH -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0" >
+            <TextBlock Text="Path" Width="50"/>
+            <TextBox Width="500" Text="{Binding ProjectPath}"/>
+            <Button Content="Browse" Width="45" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <!-- BUTTONS -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0" >
+            <Button Content="Create" Width="96" IsDefault="True"/>
+            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True"/>
+        </StackPanel>
+
+    </StackPanel>
+
+</UserControl>

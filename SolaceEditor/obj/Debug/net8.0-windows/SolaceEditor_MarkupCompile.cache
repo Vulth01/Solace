@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Solace\SolaceEditor\App.xaml
-11407045341
+42038757441
 
-4628952667
+12-1309547418
 198-352714763
-MainWindow.xaml;
+GameProject\NewProjectView.xaml;GameProject\OpenProjectView.xaml;GameProject\ProjectBrowserDialog.xaml;MainWindow.xaml;
 
 False
 

@@ -19,3 +19,12 @@ C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\refint\SolaceEditor.dll
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.pdb
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.genruntimeconfig.cache
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\ref\SolaceEditor.dll
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\NewProjectView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\OpenProjectView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\ProjectBrowserDialog.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\NewProjectView.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\OpenProjectView.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\ProjectBrowserDialog.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.Properties.Resources.resources
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.csproj.GenerateResource.cache
