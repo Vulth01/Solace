@@ -70,12 +70,11 @@ namespace SolaceEditor.GameProject
         public NewProject()
         {
             ProjectTemplates = new ReadOnlyObservableCollection<ProjectTemplate>(_projectTemplates);
-            Debug.WriteLine("------------------------0--------------------------");
             try
             {
                 var templateDirectories = Directory.GetDirectories(_templatePath);
                 Debug.Assert(templateDirectories.Any());
-                Debug.WriteLine("------------------------1--------------------------");
+                Debug.WriteLine("------------------------TEMPLATES--------------------------");
                 foreach (var directory in templateDirectories)
                 {
                     var templateFile = Path.Combine(directory, "template.xml");
@@ -89,7 +88,7 @@ namespace SolaceEditor.GameProject
                         template.ProjectFilePath = Path.GetFullPath(Path.Combine(directory, template.ProjectFile));
 
                         //DEBUG TO CONFIRM PATH
-                        Debug.WriteLine("------------------------2--------------------------");
+                        Debug.WriteLine("------------------------FILEPATHS--------------------------");
                         Debug.WriteLine("Filepath: " + template.IconFilePath);
                         Debug.WriteLine("Filepath: " + template.ScreenshotFilePath);
                         Debug.WriteLine("Filepath: " + template.ProjectFilePath);
@@ -99,9 +98,8 @@ namespace SolaceEditor.GameProject
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("------------------------4--------------------------");
+                Debug.WriteLine("------------------------EXCEPTION--------------------------");
                 Debug.WriteLine(ex.Message);
-                Debug.WriteLine("------------------------5--------------------------");
                 // TODO: Log error
             }
         }
