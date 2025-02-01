@@ -20,8 +20,10 @@
 
         <!-- BUTTONS -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
-            <Button Content="Open" Width="96" IsDefault="True" Background="#A0DDFF"/>
-            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True" Background="#A0DDFF"/>
+            <Button Content="Open" Width="96" IsDefault="True" 
+                    Background="#A0DDFF" x:Name="btnOpenProject" Click="OnBtnOpen_Click"/>
+            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True" 
+                    Background="#A0DDFF" x:Name="btnExitProject" Click="OnBtnExit_Click"/>
         </StackPanel>
 
     </StackPanel>
