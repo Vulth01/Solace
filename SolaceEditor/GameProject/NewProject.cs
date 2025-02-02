@@ -44,6 +44,7 @@ namespace SolaceEditor.GameProject
                 if (_projectName != value)
                 {
                     _projectName = value;
+                    ValidateProjectPath();
                     OnPropertyChanged(nameof(ProjectName));
                 }
             }
@@ -58,7 +59,37 @@ namespace SolaceEditor.GameProject
                 if (_projectPath != value)
                 {
                     _projectPath = value;
+                    ValidateProjectPath();
                     OnPropertyChanged(nameof(ProjectPath));
+                }
+            }
+        }
+
+
+        private bool _isValid;
+        public bool IsValid
+        {
+            get => _isValid;
+            set
+            {
+                if (_isValid != value)
+                {
+                    _isValid = value;
+                    OnPropertyChanged(nameof(IsValid));
+                }
+            }
+        }
+
+        private string _errorMsg;
+        public string ErrorMsg
+        {
+            get => _errorMsg;
+            set
+            {
+                if (_errorMsg != value)
+                {
+                    _errorMsg = value;
+                    OnPropertyChanged(nameof(ErrorMsg));
                 }
             }
         }
@@ -66,6 +97,45 @@ namespace SolaceEditor.GameProject
         private ObservableCollection<ProjectTemplate> _projectTemplates = new ObservableCollection<ProjectTemplate>();
         public ReadOnlyObservableCollection<ProjectTemplate> ProjectTemplates
         { get; }
+
+
+        private bool ValidateProjectPath()
+        {
+            var path = ProjectPath;
+            if (!Path.EndsInDirectorySeparator(path)) path += @"\";
+            path += $@"{ProjectName}\";
+
+            IsValid = false;
+            if(string.IsNullOrWhiteSpace(ProjectName.Trim()))
+            {
+                ErrorMsg = "Project name cannot be empty";
+            }
+            else if (ProjectName.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
+            {
+                ErrorMsg = "Invalid character(s) used in project name.";
+            }
+            if (string.IsNullOrWhiteSpace(ProjectPath.Trim()))
+            {
+                ErrorMsg = "Project name cannot be empty";
+            }
+            else if (ProjectPath.IndexOfAny(Path.GetInvalidPathChars()) != -1)
+            {
+                ErrorMsg = "Invalid character(s) used in project name.";
+            }
+            else if (Directory.Exists(path) && Directory.EnumerateFileSystemEntries(path).Any())
+            {
+                ErrorMsg = "Directory already exists and is not empty.";
+            }
+            else
+            {
+                ErrorMsg = string.Empty;
+                IsValid = true;
+            }
+
+            return IsValid;
+        }
+
+
 
         public NewProject()
         {
@@ -96,12 +166,11 @@ namespace SolaceEditor.GameProject
                         _projectTemplates.Add(template);
                     }
                 }
+                ValidateProjectPath();
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("------------------------4--------------------------");
                 Debug.WriteLine(ex.Message);
-                Debug.WriteLine("------------------------5--------------------------");
                 // TODO: Log error
             }
         }
