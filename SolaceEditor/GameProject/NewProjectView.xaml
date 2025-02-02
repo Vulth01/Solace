@@ -52,10 +52,11 @@
         <!-- BUTTONS -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0" >
             <Button Content="Create" Width="96" x:Name="btnCreateProject" IsDefault="True" 
-                    Background="#A0DDFF" Click="OnBtnCreate_Click"/>
+                    Background="#A0DDFF" Click="OnBtnCreate_Click" IsEnabled="{Binding IsValid}"/>
             <Button Content="Exit" Width="96" x:Name="btnExitProject" Margin="30,0,0,0" 
                     IsCancel="True" Background="#A0DDFF" Click="OnBtnExit_Click"/>
         </StackPanel>
+        <TextBlock Text="{Binding ErrorMsg}" Margin="0,20,0,0" VerticalAlignment="Center"/>
 
     </StackPanel>
 
