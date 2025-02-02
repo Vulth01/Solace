@@ -19,7 +19,7 @@
         <!-- IMAGES -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <ListBox Width="195" Height="250" ItemsSource="{Binding ProjectTemplates}" 
-                     x:Name="templateListBox" Background= "#FDB3CA">
+                     x:Name="templateListBox" Background= "#FDB3CA" SelectedIndex="0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
