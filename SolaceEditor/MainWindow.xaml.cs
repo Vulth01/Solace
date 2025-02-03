@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 
 namespace SolaceEditor
 {
@@ -7,18 +8,27 @@ namespace SolaceEditor
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += OnMainWindowLoaded;
+        }
+
+        private void OnMainWindowLoaded(object sender, RoutedEventArgs e)
+        {
+            Loaded -= OnMainWindowLoaded;
+            OpenProjectBrowserDialog();
         }
 
         private void OpenProjectBrowserDialog()
         {
             var projectBrowserDialog = new GameProject.ProjectBrowserDialog();
-            projectBrowserDialog.Show();
-            this.Close();
-        }
 
-        private void OnLoaded(object sender, RoutedEventArgs e)
-        {
-            OpenProjectBrowserDialog();
+            if(projectBrowserDialog.ShowDialog() == false)
+            {
+                Application.Current.Shutdown();
+            }
+            else
+            {
+                Debug.WriteLine("projectBrowserDialog.ShowDialog = true");
+            }
         }
     }
 }

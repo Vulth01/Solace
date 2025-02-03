@@ -12,15 +12,12 @@
         <local:NewProject />
     </UserControl.DataContext>
 
-    <!-- NEW PROJECT WINDOW -->
-
     <StackPanel Background="#5C6898">
 
-        <!-- IMAGES -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <ListBox Width="195" Height="250" Margin="5,10,0,0" 
-                     ItemsSource="{Binding ProjectTemplates}" 
-                     x:Name="templateListBox" Background= "#ffcfde" SelectedIndex="0">
+            <ListBox Width="195" Height="250" Margin="5,10,0,0" ItemsSource="{Binding ProjectTemplates}" 
+                     x:Name="templateListBox" Background= "#ffcfde" 
+                     SelectedIndex="0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -37,27 +34,24 @@
             </Border>
         </StackPanel>
 
-        <!-- NAME -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
             <TextBlock Text="Name" Width="50"/>
             <TextBox Width="550" Text="{Binding ProjectName, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
 
-        <!-- PATH -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0" >
             <TextBlock Text="Path" Width="50"/>
             <TextBox Width="500" Text="{Binding ProjectPath, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Content="Browse" Width="45" Margin="5,0,0,0"/>
         </StackPanel>
 
-        <!-- BUTTONS -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0" >
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
+                    Margin="0,20,0,0" >
 
-            <Button Content="Create" Width="96" x:Name="btnCreateProject" IsDefault="True" 
-                    Background="#A0DDFF" Click="OnBtnCreate_Click" IsEnabled="{Binding IsValid}"/>
+            <Button Content="Create" Width="96" IsDefault="True" Background="#A0DDFF" IsEnabled="{Binding IsValid}"
+                    Click="OnBtnCreate_Click" />
 
-            <Button Content="Exit" Width="96" x:Name="btnExitProject" Margin="30,0,0,0" 
-                    IsCancel="True" Background="#A0DDFF"/>
+            <Button Content="Exit" Width="96" Margin="30,0,0,0" IsCancel="True" Background="#A0DDFF"/>
         </StackPanel>
         <TextBlock Text="{Binding ErrorMsg}" Margin="0,20,0,0" HorizontalAlignment="Center"/>
 
