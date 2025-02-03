@@ -9,8 +9,4 @@
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="GameProject\" />
-  </ItemGroup>
-
 </Project>
