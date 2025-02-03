@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,32 +24,5 @@ namespace SolaceEditor.GameProject
         {
             InitializeComponent();
         }
-
-        private void OnBtnOpen_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender == btnOpenProject)
-            {
-                Debug.WriteLine("------------------------OPENING PROJECT--------------------------");
-            }
-
-        }
-
-
-        private void OnBtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender == btnExitProject)
-            {
-                Debug.WriteLine("------------------------EXIT_CLICK--------------------------");
-                Quit();
-            }
-
-        }
-
-        
-        private void Quit()
-        {
-            Environment.Exit(1);
-        }
-
     }
 }
