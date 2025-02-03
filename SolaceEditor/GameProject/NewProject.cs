@@ -9,6 +9,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Documents;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SolaceEditor.GameProject
 {
@@ -160,9 +161,12 @@ namespace SolaceEditor.GameProject
                 File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Icon.png")));
                 File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Screenshot.png")));
 
-                Project project = new Project(ProjectName, ProjectPath);
-                Serializer.ToFile(project, path +  "ProjectName" + Project.Extension);
-                return path;
+                var projectXml = File.ReadAllText(template.ProjectFilePath);                                                //Writing to the project file
+                projectXml = string.Format(projectXml, ProjectName, ProjectPath);                                           //substituting the project name and path
+                var projectPath = Path.GetFullPath(Path.Combine(path, $"{ProjectName}{Project.Extension}"));                //Creating the project file
+                File.WriteAllText(projectPath, projectXml);                                                                 //Writing the project file
+
+                return path;                                                                                                //Returning the project path
             }
             catch (Exception ex)
             {

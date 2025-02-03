@@ -36,7 +36,7 @@ namespace SolaceEditor.GameProject
             if(!string.IsNullOrEmpty(projectPath))
             {
                 dialogResult = true;
-
+                OpenProject.Open(new ProjectData() { ProjectName = vm.ProjectName, ProjectPath = projectPath}) ;
             }
             win.DialogResult = dialogResult;
             win.Close();
