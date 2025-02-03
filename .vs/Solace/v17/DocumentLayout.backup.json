@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,10 +65,6 @@
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ProjectBrowserDialog.xaml.cs",
@@ -78,8 +74,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T10:30:38.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T10:30:38.761Z"
             },
             {
               "$type": "Document",
@@ -90,8 +85,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T10:24:39.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T10:24:39.301Z"
             },
             {
               "$type": "Document",
@@ -102,8 +96,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\MainWindow.xaml",
               "RelativeToolTip": "SolaceEditor\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T08:17:11.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:17:11.787Z"
             },
             {
               "$type": "Document",
@@ -114,8 +107,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T08:12:10.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:12:10.165Z"
             },
             {
               "$type": "Document",
@@ -125,7 +117,7 @@
               "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwDIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwBUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T07:49:10.046Z",
               "EditorCaption": ""
@@ -140,8 +132,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProject.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowEcAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:10.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T07:49:10.767Z"
             },
             {
               "$type": "Document",
@@ -153,8 +144,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\OpenProjectView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:07.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T07:49:07.984Z"
             },
             {
               "$type": "Document",
@@ -166,8 +156,11 @@
               "RelativeToolTip": "SolaceEditor\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:03.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T07:49:03.631Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         },
