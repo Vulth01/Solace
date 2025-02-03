@@ -114,7 +114,7 @@ namespace SolaceEditor.GameProject
             {
                 ErrorMsg = "Invalid character(s) used in project name.";
             }
-            if (string.IsNullOrWhiteSpace(ProjectPath.Trim()))
+            else if (string.IsNullOrWhiteSpace(ProjectPath.Trim()))
             {
                 ErrorMsg = "Project name cannot be empty";
             }

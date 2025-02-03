@@ -104,8 +104,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T08:12:10.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:12:10.165Z"
             },
             {
               "$type": "Document",
@@ -117,8 +116,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:10.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T07:49:10.046Z"
             },
             {
               "$type": "Document",
@@ -128,7 +126,7 @@
               "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProject.cs",
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProject.cs",
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProject.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAUwGwAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwHQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T07:49:10.767Z",
               "EditorCaption": ""
