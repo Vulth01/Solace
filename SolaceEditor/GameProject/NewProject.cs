@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Windows.Documents;
 
 namespace SolaceEditor.GameProject
 {
@@ -50,7 +51,7 @@ namespace SolaceEditor.GameProject
             }
         }
 
-        private string _projectPath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\Solace\";
+        private string _projectPath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\SolaceProjects\";
         public string ProjectPath
         {
             get => _projectPath;
@@ -114,13 +115,13 @@ namespace SolaceEditor.GameProject
             {
                 ErrorMsg = "Invalid character(s) used in project name.";
             }
-            if (string.IsNullOrWhiteSpace(ProjectPath.Trim()))
+            else if (string.IsNullOrWhiteSpace(ProjectPath.Trim()))
             {
-                ErrorMsg = "Project name cannot be empty";
+                ErrorMsg = "Project path cannot be empty";
             }
             else if (ProjectPath.IndexOfAny(Path.GetInvalidPathChars()) != -1)
             {
-                ErrorMsg = "Invalid character(s) used in project name.";
+                ErrorMsg = "Invalid character(s) used in project path.";
             }
             else if (Directory.Exists(path) && Directory.EnumerateFileSystemEntries(path).Any())
             {
@@ -136,6 +137,41 @@ namespace SolaceEditor.GameProject
         }
 
 
+        public string CreateProject(ProjectTemplate template)
+        {
+            ValidateProjectPath();
+            if(!IsValid)
+            {
+                return string.Empty;
+            }
+
+            if (!Path.EndsInDirectorySeparator(ProjectPath)) ProjectPath += @"\";
+            var path = $@"{ProjectPath}{ProjectName}\";
+
+            try
+            {
+                if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+                foreach (var folder in template.Folders)
+                {
+                    Directory.CreateDirectory(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(path), folder)));
+                }
+                var dirInfo = new DirectoryInfo(path + @".Solace\");
+                dirInfo.Attributes |= FileAttributes.Hidden;
+                File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Icon.png")));
+                File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Screenshot.png")));
+
+                Project project = new Project(ProjectName, ProjectPath);
+                Serializer.ToFile(project, path +  "ProjectName" + Project.Extension);
+                return path;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return string.Empty;
+            }
+
+
+        }
 
         public NewProject()
         {

@@ -29,35 +29,19 @@ namespace SolaceEditor.GameProject
 
         private void OnBtnCreate_Click(object sender, RoutedEventArgs e)
         {
-            if (sender == btnCreateProject)
+            var vm = DataContext as NewProject;
+            var projectPath = vm.CreateProject(templateListBox.SelectedItem as ProjectTemplate);
+            bool dialogResult = false;
+            var win = Window.GetWindow(this);
+            if(!string.IsNullOrEmpty(projectPath))
             {
-                Debug.WriteLine("------------------------CREATE_CLICK--------------------------");
-                OpenProjectBrowserDialog();
+                dialogResult = true;
+
             }
-
-        }
-        private void OpenProjectBrowserDialog()
-        {
-            Debug.WriteLine("------------------------PROJECT START--------------------------");
+            win.DialogResult = dialogResult;
+            win.Close();
         }
 
-
-
-        private void OnBtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender == btnExitProject)
-            {
-                Debug.WriteLine("------------------------EXIT_CLICK--------------------------");
-                Quit();
-            }
-
-        }
-
-
-        private void Quit()
-        {
-            Environment.Exit(1);
-        }
 
     }
 }
