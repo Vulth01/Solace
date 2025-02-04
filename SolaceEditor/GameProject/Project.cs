@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SolaceEditor.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -19,17 +20,16 @@ namespace SolaceEditor.GameProject
         public static string Extension { get; } = ".solace";
 
         [DataMember]
-        public string Name {  get; private set; } = "New Project";
+        public string Name { get; private set; } = "New Project";
 
         [DataMember]
-        public string Path{ get; private set; }
+        public string Path { get; private set; }
 
         public string FullPath => $"{Path}{Name}{Extension}";
 
         [DataMember(Name = "Scenes")]
         private ObservableCollection<Scene> _scenes = new ObservableCollection<Scene>();
-        public ReadOnlyObservableCollection<Scene> Scenes 
-        { get; private set; }
+        public ReadOnlyObservableCollection<Scene> Scenes { get; private set; }
 
         private Scene _activeScene;
 
@@ -54,7 +54,6 @@ namespace SolaceEditor.GameProject
         public ICommand AddScene { get; private set; }
         public ICommand RemoveScene { get; private set; }
 
-
         private void AddSceneInternal(string sceneName)
         {
             Debug.Assert(!string.IsNullOrEmpty(sceneName.Trim()));
@@ -65,7 +64,7 @@ namespace SolaceEditor.GameProject
         {
             Debug.Assert(_scenes.Contains(scene));
             _scenes.Remove(scene);
-        } 
+        }
 
         public static Project Load(string file)
         {
@@ -75,7 +74,6 @@ namespace SolaceEditor.GameProject
 
         public void Unload()
         {
-
         }
 
         public static void Save(Project project)
@@ -86,13 +84,13 @@ namespace SolaceEditor.GameProject
         [OnDeserialized]
         private void OnDeserialized(StreamingContext context)
         {
-            if(_scenes != null)
+            if (_scenes != null)
             {
                 Scenes = new ReadOnlyObservableCollection<Scene>(_scenes);
                 OnPropertyChanged(nameof(Scenes));
             }
             ActiveScene = Scenes.FirstOrDefault(x => x.IsActive);
-            
+
             AddScene = new RelayCommand<object>(x =>
             {
                 AddSceneInternal("New Scene " + Scenes.Count);
@@ -102,10 +100,10 @@ namespace SolaceEditor.GameProject
                 UndoRedo.Add(new UndoRedoAction(
                        () => RemoveSceneInternal(newScene),
                        () => _scenes.Insert(sceneIndex, newScene),
-                        "Add Scene " + newScene.Name)); 
+                        "Add Scene " + newScene.Name));
             });
 
-            RemoveScene = new RelayCommand<object>(x =>
+            RemoveScene = new RelayCommand<Scene>(x =>
             {
                 var sceneIndex = _scenes.IndexOf(x);
                 RemoveSceneInternal(x);
@@ -114,10 +112,7 @@ namespace SolaceEditor.GameProject
                     () => _scenes.Insert(sceneIndex, x),
                     () => RemoveSceneInternal(x),
                     "Remove Scene " + x.Name));
-            }, x=> !x.IsActive);
-
-            Undo = new RelayCommand<object>(x => UndoRedo.Undo());
-            Redo = new RelayCommand<object>(x => UndoRedo.Redo());
+            }, x => !x.IsActive);
         }
 
         public Project(string name, string path)
@@ -128,6 +123,14 @@ namespace SolaceEditor.GameProject
             OnDeserialized(new StreamingContext());
         }
 
+        // Add a parameterless constructor
+        public Project()
+        {
+            Name = "New Project";
+            Path = string.Empty;
+
+            OnDeserialized(new StreamingContext());
+        }
     }
 
 }

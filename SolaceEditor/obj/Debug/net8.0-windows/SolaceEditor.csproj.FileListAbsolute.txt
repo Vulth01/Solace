@@ -32,3 +32,5 @@ C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\WorldEditorV
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\WorldEditorView.baml
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\ProjectLayoutView.g.cs
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\ProjectLayoutView.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\UndoRedoView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\UndoRedoView.baml
