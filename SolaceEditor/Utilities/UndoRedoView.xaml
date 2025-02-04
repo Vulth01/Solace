@@ -6,5 +6,27 @@
              xmlns:local="clr-namespace:SolaceEditor.Utilities"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
+    <StackPanel>
+        <ItemsControl ItemsSource="{Binding UndoList}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <DataTemplate>
+                <TextBlock Text="{Binding Name}"/>
+            </DataTemplate>
+        </ItemsControl>
+        <ItemsControl ItemsSource="{Binding RedoList}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <DataTemplate>
+                <TextBlock Text="{Binding Name}" Foreground="LightGray"/>
+            </DataTemplate>
+        </ItemsControl>
+    </StackPanel>
 </UserControl>
