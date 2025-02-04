@@ -1,6 +1,20 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Windows;
 using SolaceEditor.GameProject;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace SolaceEditor
 {
@@ -20,7 +34,7 @@ namespace SolaceEditor
             OpenProjectBrowserDialog();
         }
 
-        private void OnMainWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void OnMainWindowClosing(object sender, CancelEventArgs e)
         {
             Closing -= OnMainWindowClosing;
             Project.Current?.Unload();

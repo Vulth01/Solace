@@ -26,9 +26,3 @@ namespace SolaceEditor.Utilities
         }
     }
 }
-
-
-
-
-
-//https://youtu.be/JkzkayZ6_o0?t=2760

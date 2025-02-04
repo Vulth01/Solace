@@ -28,12 +28,14 @@
                         <Expander IsExpanded="{Binding IsActive, Mode=OneWay}">
                             <Expander.Header>
                                 <Grid>
+                                    <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="{Binding Name}"/>
-                                    <Button 
-                                        Content="Remove" 
-                                        Command="{Binding DataContext.RemoveScene, 
-                                        RelativeSource={RelativeSource AncestorType=UserControl}}",
-                                        CommandParameter="{Binding}" Margin="20,0" Focusable="False"
+                                        <Button 
+                                            Content="Remove" 
+                                            Command="{Binding DataContext.RemoveScene, 
+                                            RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                            CommandParameter="{Binding}" Margin="20,0" Focusable="False"/>
+                                     </StackPanel>
                                 </Grid>
                             </Expander.Header>
                             <Border Background="LightCyan" Height="100"/>
