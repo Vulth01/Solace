@@ -87,7 +87,7 @@ namespace SolaceEditor.GameProject
             }
             WriteProjectData();
 
-            return null;
+            return Project.Load(project.FullPath);
         }
 
 
