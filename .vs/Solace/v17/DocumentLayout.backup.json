@@ -3,52 +3,24 @@
   "WorkspaceRootPath": "C:\\Solace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\newprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\newprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\newproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\newproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\openprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\openprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\newprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\newprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\common\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\common\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\openproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\openproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\openprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\openprojectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\newprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\newprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\openprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\openprojectview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\projectbrowserdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\projectbrowserdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\projectbrowserdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\projectbrowserdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,47 +53,35 @@
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Common\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Common\\ViewModelBase.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Common\\ViewModelBase.cs",
-              "RelativeToolTip": "SolaceEditor\\Common\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:59:03.966Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Scene.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\Scene.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\Scene.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\Scene.cs",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\Scene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:56:41.776Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "NewProjectView.xaml",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProjectView.xaml",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T16:55:26.952Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\Project.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\Project.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\Project.cs",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\Project.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAjwCAAAAATAAAAAAAAAA==",
+              "Title": "NewProjectView.xaml.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:51:57.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T16:55:35.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "OpenProjectView.xaml",
               "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProjectView.xaml",
               "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\OpenProjectView.xaml",
@@ -133,100 +93,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "OpenProjectView.xaml.cs",
               "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProjectView.xaml.cs",
               "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\OpenProjectView.xaml.cs",
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProjectView.xaml.cs",
               "RelativeToolTip": "SolaceEditor\\GameProject\\OpenProjectView.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:07.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T16:35:34.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NewProjectView.xaml",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProjectView.xaml",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T08:12:10.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NewProjectView.xaml.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwCcAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "OpenProject.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProject.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\OpenProject.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProject.cs",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\OpenProject.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAUwFkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:10.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NewProject.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProject.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProject.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProject.cs",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProject.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAmwKMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:10.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProjectBrowserDialog.xaml",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T17:34:53.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProjectBrowserDialog.xaml.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml.cs",
-              "RelativeToolTip": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T17:05:53.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "SolaceEditor\\MainWindow.xaml",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\MainWindow.xaml",
-              "RelativeToolTip": "SolaceEditor\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T08:17:11.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\MainWindow.xaml.cs",
-              "RelativeToolTip": "SolaceEditor\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:49:03.631Z"
+              "WhenOpened": "2025-02-03T16:29:16.592Z"
             }
           ]
         },
