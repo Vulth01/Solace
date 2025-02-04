@@ -28,3 +28,7 @@ C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\OpenProjectView.baml
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\GameProject\ProjectBrowserDialog.baml
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.Properties.Resources.resources
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\SolaceEditor.csproj.GenerateResource.cache
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\WorldEditorView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\WorldEditorView.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\ProjectLayoutView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\ProjectLayoutView.baml
