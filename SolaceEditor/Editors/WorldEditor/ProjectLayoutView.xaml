@@ -32,8 +32,7 @@
                                     <TextBlock Text="{Binding Name}"/>
                                         <Button 
                                             Content="Remove" 
-                                            Command="{Binding DataContext.RemoveScene, 
-                                            RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                            Command="{Binding DataContext.RemoveScene, RelativeSource={RelativeSource AncestorType=UserControl}}" 
                                             CommandParameter="{Binding}" Margin="20,0" Focusable="False"/>
                                      </StackPanel>
                                 </Grid>

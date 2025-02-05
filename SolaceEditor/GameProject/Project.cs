@@ -113,6 +113,10 @@ namespace SolaceEditor.GameProject
                     () => RemoveSceneInternal(x),
                     "Remove Scene " + x.Name));
             }, x => !x.IsActive);
+
+
+            Undo = new RelayCommand<object>(x => UndoRedo.Undo());
+            Redo = new RelayCommand<object>(x => UndoRedo.Redo());
         }
 
         public Project(string name, string path)
