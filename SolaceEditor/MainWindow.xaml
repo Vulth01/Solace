@@ -7,6 +7,7 @@
         xmlns:editors="clr-namespace:SolaceEditor.Editors"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="Solace Editor" Height="710" Width="1440"
+        Background="DarkSlateGray"
         >
     <Grid>
         <editors:WorldEditorView/>
