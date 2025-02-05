@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using SolaceEditor.Components;
 
 namespace SolaceEditor.GameProject
 {
@@ -44,6 +46,9 @@ namespace SolaceEditor.GameProject
             }
         }
 
+        [DataMember(Name = nameof(_gameEntities))]
+        private readonly ObservableCollection<GameEntity> _gameEntities = new ObservableCollection<GameEntity>();
+        public ReadOnlyObservableCollection<GameEntity> GameEntities { get; }
 
         public Scene(Project project, string name)
         {
@@ -54,3 +59,9 @@ namespace SolaceEditor.GameProject
 
     }
 }
+
+
+
+
+
+//https://youtu.be/X3zJKaYu3v0?t=952
