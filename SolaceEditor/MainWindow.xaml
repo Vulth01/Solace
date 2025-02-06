@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolaceEditor"
         xmlns:editors="clr-namespace:SolaceEditor.Editors"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="Solace Editor" Height="710" Width="1440"
-        Background="DarkSlateGray"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen"
+        Title="Solace Editor"
+        Height="710" 
+        Width="1440"	
+        Background="#5C6898"
         >
     <Grid>
         <editors:WorldEditorView/>
