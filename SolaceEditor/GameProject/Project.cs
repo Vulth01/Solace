@@ -55,13 +55,13 @@ namespace SolaceEditor.GameProject
         public ICommand RemoveSceneCommand { get; private set; }
         public ICommand SaveCommand { get; private set; }
 
-        private void AddSceneInternal(string sceneName)
+        private void AddScene(string sceneName)
         {
             Debug.Assert(!string.IsNullOrEmpty(sceneName.Trim()));
             _scenes.Add(new Scene(this, sceneName));
         }
 
-        private void RemoveSceneInternal(Scene scene)
+        private void RemoveScene(Scene scene)
         {
             Debug.Assert(_scenes.Contains(scene));
             _scenes.Remove(scene);
@@ -94,12 +94,12 @@ namespace SolaceEditor.GameProject
 
             AddSceneCommand = new RelayCommand<object>(x =>
             {
-                AddSceneInternal("New Scene " + Scenes.Count);
+                AddScene("New Scene " + Scenes.Count);
                 var newScene = _scenes.Last();
                 var sceneIndex = _scenes.Count - 1;
 
                 UndoRedo.Add(new UndoRedoAction(
-                       () => RemoveSceneInternal(newScene),
+                       () => RemoveScene(newScene),
                        () => _scenes.Insert(sceneIndex, newScene),
                         "Add Scene " + newScene.Name));
             });
@@ -107,11 +107,11 @@ namespace SolaceEditor.GameProject
             RemoveSceneCommand = new RelayCommand<Scene>(x =>
             {
                 var sceneIndex = _scenes.IndexOf(x);
-                RemoveSceneInternal(x);
+                RemoveScene(x);
 
                 UndoRedo.Add(new UndoRedoAction(
                     () => _scenes.Insert(sceneIndex, x),
-                    () => RemoveSceneInternal(x),
+                    () => RemoveScene(x),
                     "Remove Scene " + x.Name));
             }, x => !x.IsActive);
 
