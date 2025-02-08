@@ -36,3 +36,8 @@ C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\UndoRedoView.g.cs
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\UndoRedoView.baml
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\GameEntityView.g.cs
 C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Editors\WorldEditor\GameEntityView.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Dictionaries\ControlTemplates.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Dictionaries\ControlTemplates.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\App.baml
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\LoggerView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\net8.0-windows\Utilities\LoggerView.baml

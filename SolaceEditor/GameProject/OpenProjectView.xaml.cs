@@ -49,11 +49,13 @@ namespace SolaceEditor.GameProject
             var project = OpenProject.Open(projectsListBox.SelectedItem as ProjectData);
             bool dialogResult = false;
             var win = Window.GetWindow(this);
+
             if (project != null)
             {
                 dialogResult = true;
                 win.DataContext = project;
             }
+           
             win.DialogResult = dialogResult;
             win.Close();
         }

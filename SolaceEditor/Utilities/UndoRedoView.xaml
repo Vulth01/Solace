@@ -17,7 +17,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}" Foreground="White"/>
+                    <TextBlock Text="{Binding Name}" Foreground="Black"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

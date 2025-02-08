@@ -27,16 +27,29 @@ namespace SolaceEditor.Utilities
         public void Undo() => _undoAction();
         public void Redo() => _redoAction();
 
+
+
         public UndoRedoAction(string name)
         {
             Name = name;
         }
+
+
         public UndoRedoAction(Action undo, Action redo, string name)
             : this(name)
         {
             Debug.Assert(undo != null && redo != null);
             _undoAction = undo;
             _redoAction = redo;
+        }
+
+        public UndoRedoAction(string property, object instance, object undoValue, object redoValue, string name) :
+            this(
+                () => instance.GetType().GetProperty(property).SetValue(instance, undoValue),
+                () => instance.GetType().GetProperty(property).SetValue(instance, redoValue),
+                name)
+        {
+
         }
     }
 
