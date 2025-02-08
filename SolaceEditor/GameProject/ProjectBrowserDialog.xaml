@@ -13,27 +13,16 @@
             <RowDefinition Height="auto"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <!-- HEADER OF PROJECT EDITOR -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20" Background="#5C6898">
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
             <ToggleButton Content="Open Project" x:Name="openProjectButton" FontSize="32" 
                           Click="OnToggleButton_Click" IsChecked="True"/>
             <ToggleButton Content="Create Project" x:Name="createProjectButton" FontSize="32" Margin="30,0,0,0" 
                           Click="OnToggleButton_Click" IsChecked="False"/>
         </StackPanel>
-
-
-        <!-- BODY OF PROJECT EDITOR  || For create: Margin="-800,0,0,0"-->
-        <StackPanel Orientation="Horizontal" Grid.Row="1" x:Name="browserContent" Background="Gray">
-
-            <local:OpenProjectView />
-            <local:NewProjectView />
-
-            <Border Width="800" Background="SlateGray">
-                <TextBlock FontSize="72" Text="Open Project"/>
-            </Border>
-            <Border Width="800" Background="MediumPurple">
-                <TextBlock FontSize="72" Text="Create Project"/>
-            </Border>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" x:Name="browserContent">
+            <local:OpenProjectView x:Name="openProjectView" />
+            <local:NewProjectView x:Name="newProjectView"/>
         </StackPanel>
     </Grid>
 </Window>

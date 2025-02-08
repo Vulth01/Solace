@@ -16,11 +16,17 @@
     <Compile Update="Editors\WorldEditor\WorldEditorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Utilities\LoggerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Utilities\UndoRedoView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Dictionaries\ControlTemplates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Editors\WorldEditor\GameEntityView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -31,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utilities\LoggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Utilities\UndoRedoView.xaml">
