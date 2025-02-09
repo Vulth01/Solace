@@ -103,7 +103,8 @@ namespace SolaceEditor.GameProject
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                //TODO: Log errors
+                Logger.Log(MessageType.Error, $"Failed to read project data");
+                throw;
             }
         }
 
