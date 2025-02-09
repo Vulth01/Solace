@@ -159,7 +159,7 @@ namespace SolaceEditor.GameProject
                 var dirInfo = new DirectoryInfo(path + @".Solace\");
                 dirInfo.Attributes |= FileAttributes.Hidden;
                 File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Icon.png")));
-                File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Screenshot.png")));
+                File.Copy(template.ScreenshotFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "Screenshot.png")));
 
                 var projectXml = File.ReadAllText(template.ProjectFilePath);                                                //Writing to the project file
                 projectXml = string.Format(projectXml, ProjectName, ProjectPath);                                           //substituting the project name and path
@@ -181,12 +181,10 @@ namespace SolaceEditor.GameProject
         public NewProject()
         {
             ProjectTemplates = new ReadOnlyObservableCollection<ProjectTemplate>(_projectTemplates);
-            Debug.WriteLine("------------------------0--------------------------");
             try
             {
                 var templateDirectories = Directory.GetDirectories(_templatePath);
                 Debug.Assert(templateDirectories.Any());
-                Debug.WriteLine("------------------------1--------------------------");
                 foreach (var directory in templateDirectories)
                 {
                     var templateFile = Path.Combine(directory, "template.xml");
