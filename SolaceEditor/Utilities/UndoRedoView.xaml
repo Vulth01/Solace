@@ -17,7 +17,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}" Foreground="Black"/>
+                    <TextBlock Text="{Binding Name}" Foreground="#dddddd"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
@@ -29,7 +29,7 @@
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}" Foreground="Gray"/>
+                    <TextBlock Text="{Binding Name}" Foreground="#dddddd"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

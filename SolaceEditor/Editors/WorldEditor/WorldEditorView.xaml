@@ -55,10 +55,10 @@
                               VerticalAlignment="Top"/>
                 <TabControl Grid.Row="1">
                     <TabItem Header="History">
-                        <utl:UndoRedoView DataContext="{Binding UndoRedo}" Background="#D1D5FA"/>
+                        <utl:UndoRedoView DataContext="{Binding UndoRedo}" Background="#444444"/>
                     </TabItem>
                     <TabItem Header="Log">
-                        <utl:LoggerView Background="#D1D5FA"/>
+                        <utl:LoggerView Background="#444444"/>
                     </TabItem>
                 </TabControl>
             </Grid>
