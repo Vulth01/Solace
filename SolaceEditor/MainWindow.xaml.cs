@@ -22,9 +22,10 @@ namespace SolaceEditor
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             Loaded += OnMainWindowLoaded;
             Closing += OnMainWindowClosing;
+            this.WindowState = WindowState.Minimized;
         }
 
 
@@ -53,6 +54,7 @@ namespace SolaceEditor
             {
                 Project.Current?.Unload();
                 DataContext = projectBrowser.DataContext;
+                this.WindowState = WindowState.Maximized;
             }
         }
     }
