@@ -34,7 +34,6 @@ namespace SolaceEditor.GameProject
 
     class NewProject : ViewModelBase
     {
-        // Construct the path relative to the application's base directory
         private readonly string _templatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\ProjectTemplates\");
         private string _projectName = "NewProject";
 
@@ -197,8 +196,6 @@ namespace SolaceEditor.GameProject
                         template.Screenshot = File.ReadAllBytes(template.ScreenshotFilePath);
                         template.ProjectFilePath = Path.GetFullPath(Path.Combine(directory, template.ProjectFile));
 
-                        //DEBUG TO CONFIRM PATH
-                        Debug.WriteLine("------------------------2--------------------------");
                         Debug.WriteLine("Filepath: " + template.IconFilePath);
                         Debug.WriteLine("Filepath: " + template.ScreenshotFilePath);
                         Debug.WriteLine("Filepath: " + template.ProjectFilePath);

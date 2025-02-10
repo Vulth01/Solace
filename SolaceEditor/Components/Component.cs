@@ -5,11 +5,14 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace SolaceEditor.Components
 {
+    interface IMSComponent { }
+
     [DataContract]
-    public class Component : ViewModelBase
+    abstract class Component : ViewModelBase
     {
         [DataMember] 
         public GameEntity Owner { get; private set; }
@@ -19,7 +22,9 @@ namespace SolaceEditor.Components
             Debug.Assert(owner != null);
             Owner = owner;
         }
-
-
     }
+
+    abstract class MSComponent<T> : ViewModelBase, IMSComponent where T : Component
+    { }
+
 }
