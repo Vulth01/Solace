@@ -59,5 +59,10 @@ namespace SolaceEditor.GameProject
             win.DialogResult = dialogResult;
             win.Close();
         }
+
+        private void OnExit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
