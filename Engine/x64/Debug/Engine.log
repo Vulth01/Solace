@@ -1,4 +1,3 @@
 ﻿  Entity.cpp
-C:\Solace\Engine\Components\Entity.cpp(37,20): warning C4189: 'index': local variable is initialized but not referenced
-C:\Solace\Engine\Components\Entity.cpp(47,20): warning C4189: 'index': local variable is initialized but not referenced
+  Transform.cpp
   Engine.vcxproj -> C:\Solace\x64\Debug\Engine.lib

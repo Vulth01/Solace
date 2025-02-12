@@ -1,13 +1,14 @@
 #pragma once
 #include "CommonHeaders.h"
 
-namespace solace::id 
-{
-
+namespace solace::id{
 
 using id_type = u32;                                                    // Define the type used for IDs
+
+
 namespace internal {
-    constexpr u32 generation_bits{ 8 };                                     // Number of bits used for the generation part of the ID
+
+    constexpr u32 generation_bits{ 10 };                                     // Number of bits used for the generation part of the ID
     constexpr u32 index_bits{ sizeof(id_type) * 8 - generation_bits };      // Number of bits used for the index part of the ID
     constexpr id_type index_mask{ (id_type{1} << index_bits) - 1 };         // Mask to extract the index part of the ID
     constexpr id_type generation_mask{ (id_type{1} << index_bits) - 1 };    // Mask to extract the generation part of the ID
@@ -19,7 +20,6 @@ constexpr u32 min_deleted_elements{ 1024 };
 
 // Define the type used for the generation part of the ID
 using generation_type = std::conditional_t<internal::generation_bits <= 16, std::conditional_t<internal::generation_bits <= 8, u8, u16>, u32>;
-
 static_assert(sizeof(generation_type) * 8 >= internal::generation_bits);          // Ensure that the generation type can hold the required number of bits
 static_assert((sizeof(id_type) - sizeof(generation_type)) > 0);         // Ensure that the ID type can hold both the index and generation parts
 
