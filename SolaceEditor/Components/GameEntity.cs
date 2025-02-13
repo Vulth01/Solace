@@ -17,6 +17,44 @@ namespace SolaceEditor.Components
     [KnownType(typeof(Transform))]
     class GameEntity : ViewModelBase
     {
+        private int _entityID = ID.INVALID_ID;
+
+        public int EntityID
+        {
+            get => _entityID;
+            set
+            {
+                if (_entityID != value)
+                {
+                    _entityID = value;
+                    OnPropertyChanged(nameof(EntityID));
+                }
+            }
+        }
+
+        private bool _isActive;
+        public bool IsActive
+        {
+            get => _isActive;
+            set
+            {
+                if (_isActive != value)
+                {
+                    _isActive = value;
+                    if(_isActive)
+                    {
+                        EntityID = EngineAPI.CreateGameEntity(this);
+                        Debug.Assert(ID.IsValid(_entityID));
+                    }
+                    else
+                    {
+                        EngineAPI.RemoveGameEntity(this);
+                    }
+                    OnPropertyChanged(nameof(IsActive));
+                }
+            }
+        }
+
         private bool _isEnabled = true;
         [DataMember]
         public bool IsEnabled
