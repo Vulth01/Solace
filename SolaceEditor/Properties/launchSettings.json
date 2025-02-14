@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SolaceEditor": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

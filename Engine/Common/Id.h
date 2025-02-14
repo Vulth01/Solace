@@ -47,7 +47,7 @@ constexpr id_type
 new_generation(id_type id)                                              // Function to create a new generation for an ID
 {
     const id_type generation{ id::generation(id) + 1 };
-    assert(generation < (((u64)1 << internal::generation_bits)-1));                                           // Ensure the generation does not exceed the maximum value
+    assert(generation < (((u64)1 << internal::generation_bits) -1));                                           // Ensure the generation does not exceed the maximum value
     return index(id) | (generation << internal::index_bits);
 }
 

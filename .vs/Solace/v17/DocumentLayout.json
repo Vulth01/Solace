@@ -3,92 +3,24 @@
   "WorkspaceRootPath": "C:\\Solace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|C:\\Solace\\EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|solutionrelative:EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|C:\\Solace\\EngineDLL\\DllMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|solutionrelative:EngineDLL\\DllMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|C:\\Solace\\EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|solutionrelative:EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\EngineAPI\\GameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\EngineAPI\\GameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|C:\\Solace\\EngineTest\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|solutionrelative:EngineTest\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|C:\\Solace\\EngineTest\\Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|solutionrelative:EngineTest\\Test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|C:\\Solace\\EngineTest\\TestEntityComponents.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|solutionrelative:EngineTest\\TestEntityComponents.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Common\\Id.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Common\\Id.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Components\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Components\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Components\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Components\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\solaceeditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\solaceeditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Components\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Components\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Components\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Components\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\EngineAPI\\TransformComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\EngineAPI\\TransformComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Common\\CommonHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Common\\CommonHeaders.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Utilities\\MathTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Utilities\\MathTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Components\\ComponentsCommon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Components\\ComponentsCommon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Utilities\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Utilities\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\editors\\worldeditor\\worldeditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\editors\\worldeditor\\worldeditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\Common\\PrimitiveTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Common\\PrimitiveTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utilities.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\Utilities.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\Utilities.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\Utilities.cs",
-              "RelativeToolTip": "SolaceEditor\\Utilities\\Utilities.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:52:20.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameEntity.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Components\\GameEntity.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
-              "RelativeToolTip": "SolaceEditor\\Components\\GameEntity.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAC4AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T12:49:43.369Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -156,261 +62,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EngineAPI.cpp",
-              "DocumentMoniker": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
-              "RelativeDocumentMoniker": "EngineDLL\\EngineAPI.cpp",
-              "ToolTip": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
-              "RelativeToolTip": "EngineDLL\\EngineAPI.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-12T11:08:00.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DllMain.cpp",
-              "DocumentMoniker": "C:\\Solace\\EngineDLL\\DllMain.cpp",
-              "RelativeDocumentMoniker": "EngineDLL\\DllMain.cpp",
-              "ToolTip": "C:\\Solace\\EngineDLL\\DllMain.cpp",
-              "RelativeToolTip": "EngineDLL\\DllMain.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-12T11:00:33.247Z",
+              "Title": "GameEntity.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\Components\\GameEntity.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
+              "RelativeToolTip": "SolaceEditor\\Components\\GameEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T13:25:29.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TestEntityComponents.h",
-              "DocumentMoniker": "C:\\Solace\\EngineTest\\TestEntityComponents.h",
-              "RelativeDocumentMoniker": "EngineTest\\TestEntityComponents.h",
-              "ToolTip": "C:\\Solace\\EngineTest\\TestEntityComponents.h",
-              "RelativeToolTip": "EngineTest\\TestEntityComponents.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T09:11:46.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GameEntity.h",
               "DocumentMoniker": "C:\\Solace\\Engine\\EngineAPI\\GameEntity.h",
               "RelativeDocumentMoniker": "Engine\\EngineAPI\\GameEntity.h",
               "ToolTip": "C:\\Solace\\Engine\\EngineAPI\\GameEntity.h",
               "RelativeToolTip": "Engine\\EngineAPI\\GameEntity.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T10:57:12.757Z",
+              "WhenOpened": "2025-02-14T13:17:44.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Transform.h",
               "DocumentMoniker": "C:\\Solace\\Engine\\Components\\Transform.h",
               "RelativeDocumentMoniker": "Engine\\Components\\Transform.h",
               "ToolTip": "C:\\Solace\\Engine\\Components\\Transform.h",
               "RelativeToolTip": "Engine\\Components\\Transform.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T09:00:29.689Z",
+              "WhenOpened": "2025-02-14T12:43:33.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Entity.cpp",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Components\\Entity.cpp",
-              "RelativeDocumentMoniker": "Engine\\Components\\Entity.cpp",
-              "ToolTip": "C:\\Solace\\Engine\\Components\\Entity.cpp",
-              "RelativeToolTip": "Engine\\Components\\Entity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-11T08:37:18.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Entity.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Components\\Entity.h",
-              "RelativeDocumentMoniker": "Engine\\Components\\Entity.h",
-              "ToolTip": "C:\\Solace\\Engine\\Components\\Entity.h",
-              "RelativeToolTip": "Engine\\Components\\Entity.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T08:35:01.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SolaceEditor.csproj",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
-              "RelativeDocumentMoniker": "SolaceEditor\\SolaceEditor.csproj",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
-              "RelativeToolTip": "SolaceEditor\\SolaceEditor.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-10T15:31:12.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MathTypes.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Utilities\\MathTypes.h",
-              "RelativeDocumentMoniker": "Engine\\Utilities\\MathTypes.h",
-              "ToolTip": "C:\\Solace\\Engine\\Utilities\\MathTypes.h",
-              "RelativeToolTip": "Engine\\Utilities\\MathTypes.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T08:37:33.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Id.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Common\\Id.h",
-              "RelativeDocumentMoniker": "Engine\\Common\\Id.h",
-              "ToolTip": "C:\\Solace\\Engine\\Common\\Id.h",
-              "RelativeToolTip": "Engine\\Common\\Id.h",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAACoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T07:51:44.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Test.h",
-              "DocumentMoniker": "C:\\Solace\\EngineTest\\Test.h",
-              "RelativeDocumentMoniker": "EngineTest\\Test.h",
-              "ToolTip": "C:\\Solace\\EngineTest\\Test.h",
-              "RelativeToolTip": "EngineTest\\Test.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T09:06:14.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Solace\\EngineTest\\Main.cpp",
-              "RelativeDocumentMoniker": "EngineTest\\Main.cpp",
-              "ToolTip": "C:\\Solace\\EngineTest\\Main.cpp",
-              "RelativeToolTip": "EngineTest\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-12T09:04:50.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TransformComponent.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\EngineAPI\\TransformComponent.h",
-              "RelativeDocumentMoniker": "Engine\\EngineAPI\\TransformComponent.h",
-              "ToolTip": "C:\\Solace\\Engine\\EngineAPI\\TransformComponent.h",
-              "RelativeToolTip": "Engine\\EngineAPI\\TransformComponent.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T13:48:46.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Transform.cpp",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Components\\Transform.cpp",
-              "RelativeDocumentMoniker": "Engine\\Components\\Transform.cpp",
-              "ToolTip": "C:\\Solace\\Engine\\Components\\Transform.cpp",
-              "RelativeToolTip": "Engine\\Components\\Transform.cpp",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-12T08:32:22.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ComponentsCommon.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Components\\ComponentsCommon.h",
-              "RelativeDocumentMoniker": "Engine\\Components\\ComponentsCommon.h",
-              "ToolTip": "C:\\Solace\\Engine\\Components\\ComponentsCommon.h",
-              "RelativeToolTip": "Engine\\Components\\ComponentsCommon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T08:35:53.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CommonHeaders.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Common\\CommonHeaders.h",
-              "RelativeDocumentMoniker": "Engine\\Common\\CommonHeaders.h",
-              "ToolTip": "C:\\Solace\\Engine\\Common\\CommonHeaders.h",
-              "RelativeToolTip": "Engine\\Common\\CommonHeaders.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-10T20:02:09.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Serializer.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\Serializer.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\Serializer.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\Serializer.cs",
-              "RelativeToolTip": "SolaceEditor\\Utilities\\Serializer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA9wCQAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EngineAPI.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "RelativeToolTip": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwB8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:12:47.597Z",
+              "WhenOpened": "2025-02-14T13:19:00.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "WorldEditorView.xaml",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
-              "RelativeDocumentMoniker": "SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
-              "RelativeToolTip": "SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-11T10:22:50.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Utilities.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Utilities\\Utilities.h",
-              "RelativeDocumentMoniker": "Engine\\Utilities\\Utilities.h",
-              "ToolTip": "C:\\Solace\\Engine\\Utilities\\Utilities.h",
-              "RelativeToolTip": "Engine\\Utilities\\Utilities.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T10:31:58.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PrimitiveTypes.h",
-              "DocumentMoniker": "C:\\Solace\\Engine\\Common\\PrimitiveTypes.h",
-              "RelativeDocumentMoniker": "Engine\\Common\\PrimitiveTypes.h",
-              "ToolTip": "C:\\Solace\\Engine\\Common\\PrimitiveTypes.h",
-              "RelativeToolTip": "Engine\\Common\\PrimitiveTypes.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-10T20:03:25.95Z",
+              "DocumentIndex": 2,
+              "Title": "EngineAPI.cpp",
+              "DocumentMoniker": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
+              "RelativeDocumentMoniker": "EngineDLL\\EngineAPI.cpp",
+              "ToolTip": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
+              "RelativeToolTip": "EngineDLL\\EngineAPI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-14T12:43:11.382Z",
               "EditorCaption": ""
             }
           ]
