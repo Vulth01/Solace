@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Solace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\newproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\newproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\solaceeditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\solaceeditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\solaceeditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\solaceeditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\undoredo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\undoredo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\gameproject\\openproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\gameproject\\openproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\dllwrappers\\engineapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|C:\\Solace\\EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|solutionrelative:EngineDLL\\EngineAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|C:\\Solace\\EngineDLL\\DllMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}|EngineDLL\\EngineDLL.vcxproj|solutionrelative:EngineDLL\\DllMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|C:\\Solace\\EngineTest\\TestEntityComponents.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}|EngineTest\\EngineTest.vcxproj|solutionrelative:EngineTest\\TestEntityComponents.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{978C1D48-42E0-4F6D-914B-8B7D08565256}|Engine\\Engine.vcxproj|C:\\Solace\\Engine\\EngineAPI\\GameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +94,146 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Scene.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\Scene.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\Scene.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\Scene.cs",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\Scene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:45:17.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OpenProject.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProject.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\OpenProject.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProject.cs",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\OpenProject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T08:48:31.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewProject.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\GameProject\\NewProject.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\GameProject\\NewProject.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProject.cs",
+              "RelativeToolTip": "SolaceEditor\\GameProject\\NewProject.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA5wCwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T07:29:07.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SolaceEditor.csproj",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
+              "RelativeDocumentMoniker": "SolaceEditor\\SolaceEditor.csproj",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
+              "RelativeToolTip": "SolaceEditor\\SolaceEditor.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-17T07:00:21.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DllMain.cpp",
+              "DocumentMoniker": "C:\\Solace\\EngineDLL\\DllMain.cpp",
+              "RelativeDocumentMoniker": "EngineDLL\\DllMain.cpp",
+              "ToolTip": "C:\\Solace\\EngineDLL\\DllMain.cpp",
+              "RelativeToolTip": "EngineDLL\\DllMain.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T07:04:00.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestEntityComponents.h",
+              "DocumentMoniker": "C:\\Solace\\EngineTest\\TestEntityComponents.h",
+              "RelativeDocumentMoniker": "EngineTest\\TestEntityComponents.h",
+              "ToolTip": "C:\\Solace\\EngineTest\\TestEntityComponents.h",
+              "RelativeToolTip": "EngineTest\\TestEntityComponents.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-17T07:47:52.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EngineAPI.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "RelativeToolTip": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T13:19:00.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SolaceEditor",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
+              "RelativeDocumentMoniker": "SolaceEditor\\SolaceEditor.csproj",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
+              "RelativeToolTip": "SolaceEditor\\SolaceEditor.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-17T06:54:03.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameEntity.cs",
               "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
               "RelativeDocumentMoniker": "SolaceEditor\\Components\\GameEntity.cs",
               "ToolTip": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
               "RelativeToolTip": "SolaceEditor\\Components\\GameEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T13:25:29.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "UndoRedo.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\UndoRedo.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\UndoRedo.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\UndoRedo.cs",
+              "RelativeToolTip": "SolaceEditor\\Utilities\\UndoRedo.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAWwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T08:41:30.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EngineAPI.cpp",
+              "DocumentMoniker": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
+              "RelativeDocumentMoniker": "EngineDLL\\EngineAPI.cpp",
+              "ToolTip": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
+              "RelativeToolTip": "EngineDLL\\EngineAPI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-14T12:43:11.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "GameEntity.h",
               "DocumentMoniker": "C:\\Solace\\Engine\\EngineAPI\\GameEntity.h",
               "RelativeDocumentMoniker": "Engine\\EngineAPI\\GameEntity.h",
@@ -83,12 +241,11 @@
               "RelativeToolTip": "Engine\\EngineAPI\\GameEntity.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-14T13:17:44.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T13:17:44.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Transform.h",
               "DocumentMoniker": "C:\\Solace\\Engine\\Components\\Transform.h",
               "RelativeDocumentMoniker": "Engine\\Components\\Transform.h",
@@ -96,34 +253,7 @@
               "RelativeToolTip": "Engine\\Components\\Transform.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-14T12:43:33.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EngineAPI.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\DllWrappers\\EngineAPI.cs",
-              "RelativeToolTip": "SolaceEditor\\DllWrappers\\EngineAPI.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwB8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:19:00.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EngineAPI.cpp",
-              "DocumentMoniker": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
-              "RelativeDocumentMoniker": "EngineDLL\\EngineAPI.cpp",
-              "ToolTip": "C:\\Solace\\EngineDLL\\EngineAPI.cpp",
-              "RelativeToolTip": "EngineDLL\\EngineAPI.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-14T12:43:11.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:43:33.349Z"
             }
           ]
         },

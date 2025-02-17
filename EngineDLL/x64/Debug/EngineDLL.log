@@ -1,2 +1,3 @@
-﻿  EngineAPI.cpp
+﻿  DllMain.cpp
+     Creating library C:\Solace\x64\Debug\EngineDLL.lib and object C:\Solace\x64\Debug\EngineDLL.exp
   EngineDLL.vcxproj -> C:\Solace\x64\Debug\EngineDLL.dll

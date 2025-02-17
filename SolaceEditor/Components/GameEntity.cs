@@ -9,6 +9,7 @@ using System.Windows.Input;
 using SolaceEditor.DllWrappers;
 using SolaceEditor.GameProject;
 using SolaceEditor.Utilities;
+using System.Linq;
 
 namespace SolaceEditor.Components
 {

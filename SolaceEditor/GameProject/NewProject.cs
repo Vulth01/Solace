@@ -34,7 +34,7 @@ namespace SolaceEditor.GameProject
 
     class NewProject : ViewModelBase
     {
-        private readonly string _templatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\ProjectTemplates\");
+        private readonly string _templatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\SolaceEditor\ProjectTemplates\");
         private string _projectName = "NewProject";
 
         public string ProjectName
@@ -182,6 +182,9 @@ namespace SolaceEditor.GameProject
             ProjectTemplates = new ReadOnlyObservableCollection<ProjectTemplate>(_projectTemplates);
             try
             {
+                Debug.WriteLine("--------------------------------------------------------------------------------------------" + AppDomain.CurrentDomain.BaseDirectory);
+                Debug.WriteLine("--------------------------------------------------------------------------------------------" + _templatePath);
+                
                 var templateDirectories = Directory.GetDirectories(_templatePath);
                 Debug.Assert(templateDirectories.Any());
                 foreach (var directory in templateDirectories)

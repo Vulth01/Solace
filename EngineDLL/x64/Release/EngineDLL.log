@@ -1,0 +1,8 @@
+﻿  DllMain.cpp
+  EngineAPI.cpp
+     Creating library C:\Solace\x64\Release\EngineDLL.lib and object C:\Solace\x64\Release\EngineDLL.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 327 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  EngineDLL.vcxproj -> C:\Solace\x64\Release\EngineDLL.dll

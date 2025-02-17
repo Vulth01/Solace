@@ -29,7 +29,7 @@ namespace SolaceEditor.DllWrappers
 {
     static class EngineAPI
     {
-        private const string _dllName = "EngineDll.dll";
+        private const string _dllName = "EngineDLL.dll";
 
         [DllImport(_dllName)]
         private static extern int CreateGameEntity(GameEntityDescriptor desc);
