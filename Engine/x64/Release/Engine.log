@@ -1,0 +1,4 @@
+﻿  Entity.cpp
+  Transform.cpp
+C:\Solace\Engine\Components\Transform.cpp(38,33): warning C4100: 'c': unreferenced formal parameter
+  Engine.vcxproj -> C:\Solace\x64\Release\Engine.lib
