@@ -46,3 +46,4 @@ C:\Solace\x64\Debug\SolaceEditor.deps.json
 C:\Solace\x64\Debug\SolaceEditor.runtimeconfig.json
 C:\Solace\x64\Debug\SolaceEditor.dll
 C:\Solace\x64\Debug\SolaceEditor.pdb
+C:\Solace\SolaceEditor\obj\Debug\Dictionaries\EditorColours.baml
