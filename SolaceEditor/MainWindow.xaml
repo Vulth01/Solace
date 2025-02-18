@@ -10,8 +10,7 @@
         Title="Solace Editor"
         Height="710" 
         Width="1440"	
-        Background="#5C6898"
-        >
+        Style="{StaticResource SolaceWindowStyle}">
     <Grid>
         <editors:WorldEditorView/>
     </Grid>

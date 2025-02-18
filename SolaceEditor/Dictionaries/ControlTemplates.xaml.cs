@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -36,6 +37,26 @@ namespace SolaceEditor.Dictionaries
                 exp.UpdateTarget();
                 Keyboard.ClearFocus();
             }
+        }
+
+        private void OnClose_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.Close();
+        }
+
+        private void OnMaximizeRestore_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.WindowState = (window.WindowState == WindowState.Normal) ? 
+                WindowState.Maximized : WindowState.Normal;
+
+        }
+
+        private void OnMinimize_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = (Window)((FrameworkElement)sender).TemplatedParent;
+            window.WindowState = WindowState.Minimized;
         }
     }
 }
