@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -20,6 +21,8 @@ namespace SolaceEditor.GameProject
     /// </summary>
     public partial class ProjectBrowserDialog : Window
     {
+        private readonly CubicEase _easing = new CubicEase() {  EasingMode = EasingMode.EaseInOut };
+
         public ProjectBrowserDialog()
         {
             InitializeComponent();
@@ -33,36 +36,63 @@ namespace SolaceEditor.GameProject
             {
                 openProjectButton.IsEnabled = false;
                 openProjectView.Visibility = Visibility.Hidden;
-                SelectCreateProjectView();
+                OnToggleButton_Click(createProjectButton, new RoutedEventArgs());
             }
         }
+
+
+        private void AnimateToCreateProject()
+        {
+
+            var highlightAnimation = new DoubleAnimation(200, 400, new Duration(TimeSpan.FromSeconds(0.2)));
+            highlightAnimation.EasingFunction = _easing;
+            highlightAnimation.Completed += (s, e) =>
+            {
+                var animation = new ThicknessAnimation(new Thickness(0), new Thickness(-1600, 0, 0, 0), new Duration(TimeSpan.FromSeconds(0.5)));
+                animation.EasingFunction = _easing;
+                browserContent.BeginAnimation(MarginProperty, animation);
+            };
+            highlightAnimation.BeginAnimation(Canvas.LeftProperty, highlightAnimation);
+        }
+
+        private void AnimateToOpenProject()
+        {
+            var highlightAnimation = new DoubleAnimation(400, 200, new Duration(TimeSpan.FromSeconds(0.2)));
+            highlightAnimation.EasingFunction = _easing;
+            highlightAnimation.Completed += (s, e) =>
+            {
+                var animation = new ThicknessAnimation(new Thickness(-1600, 0, 0, 0), new Thickness(0), new Duration(TimeSpan.FromSeconds(0.5)));
+                animation.EasingFunction = _easing;
+                browserContent.BeginAnimation(MarginProperty, animation); 
+            };
+            highlightAnimation.BeginAnimation(Canvas.LeftProperty, highlightAnimation);
+        }
+
         private void OnToggleButton_Click(object sender, RoutedEventArgs e)
         {
             if(sender == openProjectButton)
             {
-                SelectOpenProjectView();
+                if (createProjectButton.IsChecked == true)
+                {
+                    createProjectButton.IsChecked = false;
+                    AnimateToOpenProject();
+                    openProjectView.IsEnabled = true;
+                    newProjectView.IsEnabled = false;
+                }
+                openProjectButton.IsChecked = true;
             }
-            else if (sender == createProjectButton)
+            else
             {
-                SelectCreateProjectView();
+                if (openProjectButton.IsChecked == true)
+                {
+                    openProjectButton.IsChecked = false;
+                    AnimateToCreateProject();
+                    openProjectView.IsEnabled = false;
+                    newProjectView.IsEnabled = true;
+                }
+                createProjectButton.IsChecked = true;
             }
         }
 
-        private void SelectOpenProjectView()
-        {
-            if (createProjectButton.IsChecked == true)
-            {
-                createProjectButton.IsChecked = false;
-                browserContent.Margin = new Thickness(0);
-            }
-            openProjectButton.IsChecked = true;
-        }
-
-        private void SelectCreateProjectView()
-        {
-            openProjectButton.IsChecked = false;
-            createProjectButton.IsChecked = true;
-            browserContent.Margin = new Thickness(-800, 0, 0, 0);
-        }
     }
 }
