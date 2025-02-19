@@ -24,7 +24,7 @@
         <EventSetter Event="KeyDown" Handler="OnTextBox_KeyDown"/>
     </Style>
 
-
+    <!--SIMPLE BUTTON-->
     <Style x:Key="SimpleButton" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush3}"/>
         <Setter Property="BorderBrush" Value="{StaticResource Editor.Window.GrayBrush5}"/>
@@ -59,7 +59,10 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
+
+
+    <!--WINDOW-->
     <Style x:Key="SolaceWindowStyle" TargetType="{x:Type Window}">
 
         <Setter Property="BorderBrush" Value="{StaticResource Editor.Selected.BackgroundBrush}"/>

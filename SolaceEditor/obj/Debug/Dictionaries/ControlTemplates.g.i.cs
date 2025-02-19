@@ -53,7 +53,7 @@ namespace SolaceEditor.Dictionaries {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SolaceEditor;component/dictionaries/controltemplates.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SolaceEditor;V1.0.0.0;component/dictionaries/controltemplates.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Dictionaries\ControlTemplates.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

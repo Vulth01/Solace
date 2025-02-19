@@ -61,7 +61,7 @@ namespace SolaceEditor.GameProject {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SolaceEditor;component/gameproject/newprojectview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SolaceEditor;V1.0.0.0;component/gameproject/newprojectview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GameProject\NewProjectView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

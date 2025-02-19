@@ -85,7 +85,7 @@ namespace SolaceEditor.Utilities {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SolaceEditor;component/utilities/loggerview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SolaceEditor;V1.0.0.0;component/utilities/loggerview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Utilities\LoggerView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

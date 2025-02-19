@@ -54,7 +54,7 @@ namespace SolaceEditor.Editors {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SolaceEditor;component/editors/worldeditor/projectlayoutview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SolaceEditor;V1.0.0.0;component/editors/worldeditor/projectlayoutview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Editors\WorldEditor\ProjectLayoutView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
