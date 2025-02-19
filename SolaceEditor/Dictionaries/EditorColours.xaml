@@ -4,7 +4,7 @@
 
     <Color x:Key="Editor.Window.GrayColour1">#111111</Color>
     <Color x:Key="Editor.Window.GrayColour2">#333333</Color>
-    <Color x:Key="Editor.Window.GrayColour3">#555555</Color>
+    <Color x:Key="Editor.Window.GrayColour3">#444444</Color>
     <Color x:Key="Editor.Window.GrayColour4">#666666</Color>
     <Color x:Key="Editor.Window.GrayColour5">#888888</Color>
     <Color x:Key="Editor.Window.GrayColour6">#AAAAAA</Color>

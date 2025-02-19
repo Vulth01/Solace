@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolaceEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aba4f3cb7c44d98c76fecf087f5c18855b855315")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56357d8c15eeb8d25969b6e189bc0e850dbbafa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolaceEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolaceEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

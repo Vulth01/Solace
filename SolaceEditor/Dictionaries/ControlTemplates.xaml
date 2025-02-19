@@ -4,7 +4,7 @@
                     xmlns:local="clr-namespace:SolaceEditor.Dictionaries">
 
 
-    <Style TargetType="{x:Type TextBox}" x:Key="LightTextBoxStyle">
+    <Style TargetType="{x:Type TextBlock}" x:Key="LightTextBlockStyle">
         <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
