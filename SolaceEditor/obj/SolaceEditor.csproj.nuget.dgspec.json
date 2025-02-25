@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
         "projectName": "SolaceEditor",
         "projectPath": "C:\\Solace\\SolaceEditor\\SolaceEditor.csproj",
-        "packagesPath": "C:\\Users\\Damien.Harwood\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\damie\\.nuget\\packages\\",
         "outputPath": "C:\\Solace\\SolaceEditor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Damien.Harwood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\damie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
