@@ -6,17 +6,55 @@ using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Input;
+using SolaceEditor.DllWrappers;
 using SolaceEditor.GameProject;
 using SolaceEditor.Utilities;
+using System.Linq;
 
 namespace SolaceEditor.Components
 {
-
-
     [DataContract]
     [KnownType(typeof(Transform))]
     class GameEntity : ViewModelBase
     {
+        private int _entityID = ID.INVALID_ID;
+
+        public int EntityID
+        {
+            get => _entityID;
+            set
+            {
+                if (_entityID != value)
+                {
+                    _entityID = value;
+                    OnPropertyChanged(nameof(EntityID));
+                }
+            }
+        }
+
+        private bool _isActive;
+        public bool IsActive
+        {
+            get => _isActive;
+            set
+            {
+                if (_isActive != value)
+                {
+                    _isActive = value;
+                    if(_isActive)
+                    {
+                        EntityID = EngineAPI.CreateGameEntity(this);
+                        Debug.Assert(ID.IsValid(_entityID));
+                    }
+                    else
+                    {
+                        EngineAPI.RemoveGameEntity(this);
+                    }
+                    OnPropertyChanged(nameof(IsActive));
+                }
+            }
+        }
+
         private bool _isEnabled = true;
         [DataMember]
         public bool IsEnabled
@@ -53,7 +91,9 @@ namespace SolaceEditor.Components
         [DataMember(Name = nameof(Components))]
         private readonly ObservableCollection<Component> _components = new ObservableCollection<Component>();
         public ReadOnlyObservableCollection<Component> Components { get; private set; }
+        public Component GetComponent(Type type) => Components.FirstOrDefault(c => c.GetType() == type);
 
+        public T GetComponent<T>() where T : Component => GetComponent(typeof(T)) as T; 
 
         [OnDeserialized]
         void OnDeserialized(StreamingContext context)

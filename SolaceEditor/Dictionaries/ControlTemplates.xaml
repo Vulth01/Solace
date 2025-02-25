@@ -3,11 +3,336 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:SolaceEditor.Dictionaries">
 
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="LightTextBlockStyle">
+        <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
     <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
-        <!-- TODO: design the visual look of the TextBox -->
+        <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush2}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Editor.Window.GrayBrush4}"/>
+        <Setter Property="SelectionBrush" Value="White"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Padding" Value="0,2"/>
     </Style>
 
     <Style TargetType="{x:Type TextBox}" x:Key="{x:Type TextBox}" BasedOn="{StaticResource TextBoxStyle}">
         <EventSetter Event="KeyDown" Handler="OnTextBox_KeyDown"/>
     </Style>
+
+
+    <Style x:Key="FocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="2" StrokeDashArray="1 2" SnapsToDevicePixels="true"  StrokeThickness="1" Stroke="{StaticResource Editor.FontBrush}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="{StaticResource Editor.Window.GrayColour5}" Offset="0"/>
+                    <GradientStop Color="{StaticResource Editor.Window.GrayColour3}" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="{StaticResource Editor.Window.GrayColour6}" Offset="0"/>
+                    <GradientStop Color="{StaticResource Editor.Window.GrayColour2}" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
+        <Setter Property="BorderThickness" Value="0,1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="5,3"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ControlTemplate.Resources>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="Button.Selected.OpacityBrush">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#88ffffff" Offset="1"/>
+                        </LinearGradientBrush>
+
+                        <!--https://youtu.be/b5bxV7qRVuI?t=874-->
+
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="Button.Pressed.OpacityBrush">
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#88ffffff" Offset="0"/>
+                        </LinearGradientBrush>
+
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="Button.Disabled.BackgroundBrush">
+                            <GradientStop Color="{StaticResource Editor.Window.GrayColour4}" Offset="0"/>
+                            <GradientStop Color="{StaticResource Editor.Window.GrayColour3}" Offset="1"/>
+                        </LinearGradientBrush>
+
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="Button.Disabled.BorderBrush">
+                            <GradientStop Color="{StaticResource Editor.Window.GrayColour5}" Offset="0"/>
+                            <GradientStop Color="{StaticResource Editor.Window.GrayColour1}" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <Border x:Name="border" 
+                            Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            SnapsToDevicePixels="true" 
+                            CornerRadius="3"/>
+                        <Border x:Name="borderSelected" 
+                            SnapsToDevicePixels="true" 
+                            CornerRadius="3" 
+                            BorderThickness="0" 
+                            BorderBrush="Transparent"/>
+                        <ContentPresenter x:Name="contentPresenter" 
+                                      Focusable="False" 
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                      Margin="{TemplateBinding Padding}" 
+                                      RecognizesAccessKey="True" 
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true">
+                            <Setter Property="Background" TargetName="borderSelected" 
+                                Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+                            <Setter Property="OpacityMask" TargetName="borderSelected" 
+                                Value="{StaticResource Button.Selected.OpacityBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="White"/>
+
+                            <Setter Property="Background" TargetName="borderSelected" 
+                                Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+                            <Setter Property="OpacityMask" TargetName="borderSelected" 
+                                Value="{StaticResource Button.Selected.OpacityBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" 
+                                Value="White"/>
+                            <Setter Property="Background" TargetName="borderSelected" 
+                                Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+                            <Setter Property="OpacityMask" TargetName="borderSelected" 
+                                Value="{StaticResource Button.Pressed.OpacityBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Editor.Disabled.FontBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.BackgroundBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.BorderBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--SIMPLE BUTTON-->
+    <Style x:Key="SimpleButton" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush3}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Editor.Window.GrayBrush5}"/>
+        <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}" 
+                            SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" 
+                                          Focusable="False" 
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          Margin="{TemplateBinding Padding}" 
+                                          RecognizesAccessKey="True" 
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                          VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Editor.Window.GrayBrush5}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                  </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--WINDOW-->
+    <Style x:Key="SolaceWindowStyle" TargetType="{x:Type Window}">
+
+        <Setter Property="BorderBrush" Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush1}"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CornerRadius="0" 
+                              ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}"
+                              GlassFrameThickness="0" 
+                              CaptionHeight="20"
+                              NonClientFrameEdges="None"
+                              UseAeroCaptionButtons="False"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}">
+                        <Border.Style>
+                            <Style TargetType="Border">
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=WindowState}" Value="Maximized">
+                                        <Setter Property="BorderThickness" Value="{Binding Source={x:Static SystemParameters.WindowResizeBorderThickness}}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+
+                        <Grid>
+                            <AdornerDecorator>
+                                <ContentPresenter Margin="5,24,5,5"/>
+                            </AdornerDecorator>
+
+                            <DockPanel VerticalAlignment="Top" LastChildFill="False">
+                                <DockPanel.Resources>
+                                    <Style TargetType="Path">
+                                        <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}"/>
+                                        <Setter Property="StrokeThickness" Value="1"/>
+                                    </Style>
+                                    <Style TargetType="Button" BasedOn="{StaticResource SimpleButton}">
+                                        <Setter Property="Width" Value="24"/>
+                                        <Setter Property="Height" Value="14"/>
+                                        <Setter Property="Margin" Value="0,2,1,0"/>
+                                        <Setter Property="VerticalAlignment" Value="Top"/>
+                                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                                        <Setter Property="DockPanel.Dock" Value="Right"/>
+                                        <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
+                                    </Style>
+                                </DockPanel.Resources>
+                                <TextBlock Margin="5,2,0,0" VerticalAlignment="Center"
+                                           DockPanel.Dock="Left" FontWeight="Bold"
+                                           Foreground="{StaticResource Editor.FontBrush}"
+                                           Text="{TemplateBinding Title}"/>
+
+                                <Button x:Name="btnClose" Click="OnClose_Button_Click">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Path Data="M1,1.5L 8,8.5" Margin="0"/>
+                                            <Path Data="M1,8.5L 8,1.5" Margin="0"/>
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="btnRestore" Click="OnMaximizeRestore_Button_Click">
+                                    <Button.Content>
+                                        <Rectangle Stroke="{StaticResource Editor.FontBrush}" StrokeThickness="1" Width="10" Height="8"/>
+                                    </Button.Content>
+                                </Button>
+                                
+                                <Button x:Name="btnMinimize" Click="OnMinimize_Button_Click">
+                                    <Button.Content>
+                                        <Rectangle Stroke="{StaticResource Editor.FontBrush}" StrokeThickness="1" Width="10" Height="1" Margin="0,4,0,0"/>
+                                    </Button.Content>
+                                </Button>
+                            </DockPanel>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="SolaceDialogStyle" TargetType="{x:Type Window}">
+
+        <Setter Property="BorderBrush" Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush1}"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome CornerRadius="0" 
+                              ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}"
+                              GlassFrameThickness="0" 
+                              CaptionHeight="20"
+                              NonClientFrameEdges="None"
+                              UseAeroCaptionButtons="False"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}">
+                        <Border.Style>
+                            <Style TargetType="Border">
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=WindowState}" Value="Maximized">
+                                        <Setter Property="BorderThickness" Value="{Binding Source={x:Static SystemParameters.WindowResizeBorderThickness}}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+
+                        <Grid>
+                            <AdornerDecorator>
+                                <ContentPresenter Margin="5,24,5,5"/>
+                            </AdornerDecorator>
+
+                            <DockPanel VerticalAlignment="Top" LastChildFill="False">
+                                <DockPanel.Resources>
+                                    <Style TargetType="Path">
+                                        <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource AncestorType=Button}}"/>
+                                        <Setter Property="StrokeThickness" Value="1"/>
+                                    </Style>
+                                    <Style TargetType="Button" BasedOn="{StaticResource SimpleButton}">
+                                        <Setter Property="Width" Value="24"/>
+                                        <Setter Property="Height" Value="14"/>
+                                        <Setter Property="Margin" Value="0,2,1,0"/>
+                                        <Setter Property="VerticalAlignment" Value="Top"/>
+                                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                                        <Setter Property="DockPanel.Dock" Value="Right"/>
+                                        <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
+                                    </Style>
+                                </DockPanel.Resources>
+                                <TextBlock Margin="5,2,0,0" VerticalAlignment="Center"
+                                           DockPanel.Dock="Left" FontWeight="Bold"
+                                           Foreground="{StaticResource Editor.FontBrush}"
+                                           Text="{TemplateBinding Title}"/>
+
+                                <Button x:Name="btnClose" Click="OnClose_Button_Click">
+                                    <Button.Content>
+                                        <Grid>
+                                            <Path Data="M1,1.5L 8,8.5" Margin="0"/>
+                                            <Path Data="M1,8.5L 8,1.5" Margin="0"/>
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                            </DockPanel>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>

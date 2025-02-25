@@ -46,8 +46,6 @@ create_game_entity(const entity_info& info)
 	transforms[index] = transform::create_transform(*info.transform, new_entity);
 	if (!transforms[index].is_valid()) return {};
 
-	//https://youtu.be/MJ8QVCYgtVg?t=2159
-
 	return new_entity;
 }
 
@@ -59,6 +57,8 @@ remove_game_entity(entity e)
 	assert(is_alive(e));
 	if (is_alive(e))
 	{
+		transform::remove_transform(transforms[index]);
+		transforms[index] = {};
 		free_ids.push_back(id);
 	}
 }
@@ -71,9 +71,15 @@ is_alive(entity e)
 	const id::id_type index{ id::index(id) };
 	assert(index < generations.size());
 	assert(generations[index] == id::generation(id));
-	return (generations[index] == id::generation(id));
+	return (generations[index] == id::generation(id) && transforms[index].is_valid());
 }
 
-
+transform::component
+entity::transform() const
+{
+	assert(is_alive(*this));
+	const id::id_type index{ id::index(_id) };
+	return transforms[index];
+}
 
 }

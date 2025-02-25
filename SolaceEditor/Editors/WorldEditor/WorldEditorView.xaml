@@ -9,7 +9,7 @@
              Focusable="True"
              d:DesignHeight="1080" 
              d:DesignWidth="1920">
-
+    
     <UserControl.InputBindings>
         <KeyBinding Command="{Binding UndoCommand}" 
                     Key="Z" 
@@ -31,12 +31,10 @@
 
         <StackPanel Orientation="Horizontal">
             <Button Content="Undo" 
-                    Command="{Binding UndoCommand}"
-                    Background="#D1D5FA"/>
+                    Command="{Binding UndoCommand}"/>
             <Button Content="Redo" 
                     Command="{Binding RedoCommand}" 
-                    Margin="32,0,0,0"
-                    Background="#D1D5FA"/>
+                    Margin="32,0,0,0"/>
         </StackPanel>
 
         <Grid Grid.Row="1">

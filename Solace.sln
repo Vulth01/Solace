@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolaceEditor", "SolaceEditor\SolaceEditor.csproj", "{D311FE8F-1771-452B-8655-2ED78D522B81}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineTest", "EngineTest\EngineTest.vcxproj", "{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineDLL", "EngineDLL\EngineDLL.vcxproj", "{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -19,8 +23,16 @@ Global
 		{978C1D48-42E0-4F6D-914B-8B7D08565256}.Release|x64.Build.0 = Release|x64
 		{D311FE8F-1771-452B-8655-2ED78D522B81}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{D311FE8F-1771-452B-8655-2ED78D522B81}.Debug|x64.Build.0 = Debug|Any CPU
-		{D311FE8F-1771-452B-8655-2ED78D522B81}.Release|x64.ActiveCfg = Release|Any CPU
-		{D311FE8F-1771-452B-8655-2ED78D522B81}.Release|x64.Build.0 = Release|Any CPU
+		{D311FE8F-1771-452B-8655-2ED78D522B81}.Release|x64.ActiveCfg = Release|x64
+		{D311FE8F-1771-452B-8655-2ED78D522B81}.Release|x64.Build.0 = Release|x64
+		{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}.Debug|x64.ActiveCfg = Debug|x64
+		{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}.Debug|x64.Build.0 = Debug|x64
+		{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}.Release|x64.ActiveCfg = Release|x64
+		{FCD0FEF4-84BA-4D52-ADC9-03D2C5B76440}.Release|x64.Build.0 = Release|x64
+		{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}.Debug|x64.ActiveCfg = Debug|x64
+		{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}.Debug|x64.Build.0 = Debug|x64
+		{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}.Release|x64.ActiveCfg = Release|x64
+		{AF0C275C-BF7C-42A7-9DEF-7DA3A047FEC4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
