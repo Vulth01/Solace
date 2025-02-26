@@ -38,7 +38,7 @@
                             <Expander.Header>
                                 <Grid>
                                     <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding Name}" Style="{StaticResource LightTextBlockStyle}"/>
                                         <Button 
                                             Content="Remove" 
                                             Command=
