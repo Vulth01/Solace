@@ -9,11 +9,11 @@
     <Color x:Key="Editor.Window.GrayColour5">#888888</Color>
     <Color x:Key="Editor.Window.GrayColour6">#AAAAAA</Color>
     <Color x:Key="Editor.Disabled.FontColour">#BBBBBB</Color>
-    <Color x:Key="Editor.FontColour">#EEEEEE</Color>
-    <Color x:Key="Editor.RedColour">#FF5566</Color>
-    <Color x:Key="Editor.GreenColour">#99FF99</Color>
-    <Color x:Key="Editor.BlueColour">#77CCFF</Color>
-    <Color x:Key="Editor.OrangeColour">#FFCC77</Color>
+    <Color x:Key="Editor.FontColour">#ffdddddd</Color>
+    <Color x:Key="Editor.RedColour">#ffff5a6a</Color>
+    <Color x:Key="Editor.GreenColour">#ff90ee90</Color>
+    <Color x:Key="Editor.BlueColour">#ff80deff</Color>
+    <Color x:Key="Editor.OrangeColour">#ffffd067</Color>
     <Color x:Key="Editor.Selected.BackgroundColour">#4488FF</Color>
 
     <SolidColorBrush Color="{StaticResource Editor.Window.GrayColour1}" x:Key="Editor.Window.GrayBrush1"/>
