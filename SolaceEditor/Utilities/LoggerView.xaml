@@ -29,7 +29,7 @@
                                 <Setter Property="BorderBrush" TargetName="outerBorder" 
                                         Value="{Binding Background, ElementName=innerBorder}"/>
                             </Trigger>
-                            <Trigger Property="IsChecked" Value="true">
+                            <Trigger Property="IsChecked" Value="false">
                                 <Setter Property="Opacity" TargetName="innerBorder" Value="0.5"/>
                             </Trigger>
                             <Trigger Property="IsEnabled" Value="false">
@@ -42,8 +42,7 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" 
-                      HorizontalScrollBarVisibility="Auto"
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
                       x:Name="ScrollViewer" Background="{StaticResource Editor.Window.GrayBrush2}">
             <ItemsControl ItemsSource="{Binding Source={x:Static local:Logger.FilteredMessages}}">
                 <ItemsControl.ItemsPanel>
@@ -57,11 +56,9 @@
                         <DockPanel ToolTip="{Binding MetaData}">
                             <DockPanel.Style>
                                 <Style TargetType="DockPanel">
-                                    <Setter Property="Background" 
-                                            Value="Transparent"/>
+                                    <Setter Property="Background" Value="Transparent"/>
                                     <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" 
-                                                 Value="True">
+                                        <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background">
                                                 <Setter.Value>
                                                     <SolidColorBrush Color="{StaticResource Editor.Selected.BackgroundColour}" 
@@ -79,11 +76,11 @@
                                         <Style.Triggers>
                                             <DataTrigger Binding="{Binding MessageType}" 
                                                          Value="{x:Static local:MessageType.Warning}">
-                                                <Setter Property="Foreground" Value="#ffbb22"/>
+                                                <Setter Property="Foreground" Value="#ffffbb22"/>
                                             </DataTrigger>
                                             <DataTrigger Binding="{Binding MessageType}" 
                                                          Value="{x:Static local:MessageType.Error}">
-                                                <Setter Property="Foreground" Value="#ff4455"/>
+                                                <Setter Property="Foreground" Value="#ffff4455"/>
                                             </DataTrigger>
                                         </Style.Triggers>
                                     </Style>
@@ -102,17 +99,11 @@
             </Border.Effect>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="4,0" VerticalAlignment="Center">
                 <Button Content="Clear" Margin="1,0" Click="OnClear_Button_Click" Focusable="False"/>
-                <ToggleButton IsChecked="True" Content="info" 
-                              Margin="1,0" 
-                              ToolTip="Toggle information messages"
+                <ToggleButton IsChecked="True" Content="info" Margin="1,0" ToolTip="Toggle information messages"
                               x:Name="toggleInfo" Background="{StaticResource Editor.GreenBrush}"/>
-                <ToggleButton IsChecked="True" Content="warn"
-                              Margin="1,0" 
-                              ToolTip="Toggle warning messages"
+                <ToggleButton IsChecked="True" Content="warn" Margin="1,0" ToolTip="Toggle warning messages"
                               x:Name="toggleWarnings" Background="{StaticResource Editor.OrangeBrush}"/>
-                <ToggleButton IsChecked="True" Content="error" 
-                              Margin="1,0" 
-                              ToolTip="Toggle error messages"
+                <ToggleButton IsChecked="True" Content="error" Margin="1,0" ToolTip="Toggle error messages"
                               x:Name="toggleErrors" Background="{StaticResource Editor.RedBrush}"/>
             </StackPanel>
         </Border>

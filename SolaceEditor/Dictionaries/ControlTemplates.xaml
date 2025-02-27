@@ -68,8 +68,6 @@
                             <GradientStop Color="#88ffffff" Offset="1"/>
                         </LinearGradientBrush>
 
-                        <!--https://youtu.be/b5bxV7qRVuI?t=874-->
-
                         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="Button.Pressed.OpacityBrush">
                             <GradientStop Color="White" Offset="1"/>
                             <GradientStop Color="#88ffffff" Offset="0"/>
