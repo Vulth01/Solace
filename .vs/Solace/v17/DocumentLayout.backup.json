@@ -137,8 +137,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "RelativeToolTip": "SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-19T10:45:49.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T10:45:49.89Z"
             },
             {
               "$type": "Document",
@@ -161,8 +160,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\ProjectLayoutView.xaml",
               "RelativeToolTip": "SolaceEditor\\Editors\\WorldEditor\\ProjectLayoutView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-20T08:09:16.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T08:09:16.489Z"
             },
             {
               "$type": "Document",
@@ -174,8 +172,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\Project.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAjwFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:09:27.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:09:27.864Z"
             },
             {
               "$type": "Document",
@@ -187,8 +184,7 @@
               "RelativeToolTip": "SolaceEditor\\Components\\GameEntity.cs",
               "ViewState": "AgIAANYAAAAAAAAAAAAAAN8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:09:01.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:09:01.015Z"
             },
             {
               "$type": "Document",
@@ -200,8 +196,7 @@
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProject.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:08:48.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:08:48.762Z"
             },
             {
               "$type": "Document",
@@ -213,8 +208,7 @@
               "RelativeToolTip": "SolaceEditor\\Utilities\\Serializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:08:41.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:08:41.231Z"
             },
             {
               "$type": "Document",
@@ -226,8 +220,7 @@
               "RelativeToolTip": "SolaceEditor\\Utilities\\Utilities.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:08:33.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:08:33.239Z"
             },
             {
               "$type": "Document",
@@ -239,8 +232,7 @@
               "RelativeToolTip": "SolaceEditor\\Utilities\\UndoRedo.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAuwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:08:13.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T12:08:13.353Z"
             },
             {
               "$type": "Document",
@@ -252,8 +244,7 @@
               "RelativeToolTip": "SolaceEditor\\Utilities\\LoggerView.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T11:58:36.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T11:58:36.795Z"
             },
             {
               "$type": "Document",
@@ -265,8 +256,7 @@
               "RelativeToolTip": "SolaceEditor\\Utilities\\Logger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T11:57:23.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T11:57:23.85Z"
             },
             {
               "$type": "Document",
@@ -277,8 +267,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\GameEntityView.xaml",
               "RelativeToolTip": "SolaceEditor\\Editors\\WorldEditor\\GameEntityView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-27T11:56:37.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T11:56:37.926Z"
             },
             {
               "$type": "Document",
@@ -289,8 +278,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\UndoRedoView.xaml",
               "RelativeToolTip": "SolaceEditor\\Utilities\\UndoRedoView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-26T08:48:49.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T08:48:49.258Z"
             },
             {
               "$type": "Document",
@@ -301,8 +289,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\ProjectBrowserDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T10:29:15.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T10:29:15.341Z"
             },
             {
               "$type": "Document",
@@ -313,8 +300,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\NewProjectView.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\NewProjectView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T10:59:15.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T10:59:15.825Z"
             },
             {
               "$type": "Document",
@@ -325,8 +311,7 @@
               "ToolTip": "C:\\Solace\\SolaceEditor\\GameProject\\OpenProjectView.xaml",
               "RelativeToolTip": "SolaceEditor\\GameProject\\OpenProjectView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T12:24:21.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T12:24:21.933Z"
             },
             {
               "$type": "Document",
