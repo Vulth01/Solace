@@ -158,19 +158,13 @@ namespace SolaceEditor.Components
 
         public List<GameEntity> SelectedEntities { get; }
 
-        public static float? GetMixedValue(List<GameEntity> entities, Func<GameEntity, float> getProperty)
+        public static float? GetMixedValue<T>(List<T> objects, Func<T, float> getProperty)
         {
-            var value = getProperty(entities.First());
-            foreach (var entity in entities.Skip(1))
-            {
-                if (!value.IsTheSameAs(getProperty(entity)))
-                {
-                    return null;
-                }
-            }
-            return value;
+            var value = getProperty(objects.First());
+            return objects.Skip(1).Any(x => !getProperty(x).IsTheSameAs(value)) ? (float?)null : value;
         }
 
+        //https://youtu.be/MB56y5wVgoI?t=1030
         public static bool? GetMixedValue(List<GameEntity> entities, Func<GameEntity, bool> getProperty)
         {
             var value = getProperty(entities.First());
