@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Solace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\dictionaries\\controltemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\dictionaries\\controltemplates.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\controls\\scalarbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\controls\\scalarbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\components\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\editors\\worldeditor\\worldeditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\editors\\worldeditor\\worldeditorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\controls\\numberbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\controls\\numberbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\dictionaries\\controltemplates.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\dictionaries\\controltemplates.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\utilities\\controls\\vectorbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\utilities\\controls\\vectorbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|c:\\solace\\solaceeditor\\components\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D311FE8F-1771-452B-8655-2ED78D522B81}|SolaceEditor\\SolaceEditor.csproj|solutionrelative:solaceeditor\\components\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameEntity.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\Components\\GameEntity.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\Components\\GameEntity.cs",
+              "RelativeToolTip": "SolaceEditor\\Components\\GameEntity.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAKYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T12:05:56.681Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -66,78 +67,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScalarBox.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\ScalarBox.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\Controls\\ScalarBox.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\ScalarBox.cs",
-              "RelativeToolTip": "SolaceEditor\\Utilities\\Controls\\ScalarBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T09:07:02.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VectorBox.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\VectorBox.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\Controls\\VectorBox.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\VectorBox.cs",
-              "RelativeToolTip": "SolaceEditor\\Utilities\\Controls\\VectorBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T08:00:01.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Transform.cs",
+              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Components\\Transform.cs",
+              "RelativeDocumentMoniker": "SolaceEditor\\Components\\Transform.cs",
+              "ToolTip": "C:\\Solace\\SolaceEditor\\Components\\Transform.cs",
+              "RelativeToolTip": "SolaceEditor\\Components\\Transform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T11:57:50.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WorldEditorView.xaml",
               "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "RelativeDocumentMoniker": "SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "ToolTip": "C:\\Solace\\SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "RelativeToolTip": "SolaceEditor\\Editors\\WorldEditor\\WorldEditorView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-03T12:17:56.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NumberBox.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\NumberBox.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Utilities\\Controls\\NumberBox.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Utilities\\Controls\\NumberBox.cs",
-              "RelativeToolTip": "SolaceEditor\\Utilities\\Controls\\NumberBox.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T08:57:22.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ControlTemplates.xaml.cs",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Dictionaries\\ControlTemplates.xaml.cs",
-              "RelativeDocumentMoniker": "SolaceEditor\\Dictionaries\\ControlTemplates.xaml.cs",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Dictionaries\\ControlTemplates.xaml.cs",
-              "RelativeToolTip": "SolaceEditor\\Dictionaries\\ControlTemplates.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T09:35:56.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ControlTemplates.xaml",
-              "DocumentMoniker": "C:\\Solace\\SolaceEditor\\Dictionaries\\ControlTemplates.xaml",
-              "RelativeDocumentMoniker": "SolaceEditor\\Dictionaries\\ControlTemplates.xaml",
-              "ToolTip": "C:\\Solace\\SolaceEditor\\Dictionaries\\ControlTemplates.xaml",
-              "RelativeToolTip": "SolaceEditor\\Dictionaries\\ControlTemplates.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-03T09:31:53.815Z",
+              "WhenOpened": "2025-03-04T11:57:35.673Z",
               "EditorCaption": ""
             }
           ]
