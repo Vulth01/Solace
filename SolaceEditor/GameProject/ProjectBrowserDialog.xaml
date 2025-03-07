@@ -54,7 +54,7 @@
 
         <Canvas x:Name="Canvas">
             <Rectangle Width="{Binding Path=ActualWidth, ElementName=createProjectButton}" 
-                       Height="{Binding Path=ActualHeight, ElementName=canvas}"
+                       Height="{Binding Path=ActualHeight, ElementName=Canvas}"
                        x:Name="highlightRect" Canvas.Left="200" Opacity="0.3">
                 <Rectangle.Effect>
                     <BlurEffect Radius="10" KernelType="Gaussian"/>

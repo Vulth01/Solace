@@ -12,11 +12,10 @@ namespace SolaceEditor.Dictionaries
 {
     public partial class ControlTemplates : ResourceDictionary
     {
-        private void OnTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void OnTextBox_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             var textBox = sender as TextBox;
             var exp = textBox.GetBindingExpression(TextBox.TextProperty);
-
             if (exp == null) return;
 
             if (e.Key == Key.Enter)
@@ -70,12 +69,12 @@ namespace SolaceEditor.Dictionaries
         private void OnTextBoxRename_LostFocus(object sender, RoutedEventArgs e)
         {
             var textBox = sender as TextBox;
+            if (!textBox.IsVisible) return;
             var exp = textBox.GetBindingExpression(TextBox.TextProperty);
 
             if(exp != null)
             {
                 exp.UpdateTarget();
-                textBox.MoveFocus(new TraversalRequest(FocusNavigationDirection.Previous));
                 textBox.Visibility = Visibility.Collapsed;
             }
 

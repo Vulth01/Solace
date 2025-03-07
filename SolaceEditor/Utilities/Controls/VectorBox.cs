@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace SolaceEditor.Utilities.Controls
@@ -12,7 +7,7 @@ namespace SolaceEditor.Utilities.Controls
     {
         Vector2, 
         Vector3, 
-        Vector4
+        Vector4,
     }
 
     class VectorBox : Control
@@ -37,6 +32,14 @@ namespace SolaceEditor.Utilities.Controls
             DependencyProperty.Register(nameof(Orientation), typeof(Orientation), typeof(VectorBox),
                 new PropertyMetadata(Orientation.Horizontal));
 
+        public double Multiplier
+        {
+            get => (double)GetValue(MultiplierProperty);
+            set => SetValue(MultiplierProperty, value);
+        }
+        public static readonly DependencyProperty MultiplierProperty =
+            DependencyProperty.Register(nameof(Multiplier), typeof(double), typeof(VectorBox),
+                new PropertyMetadata(1.0));
 
         public string X
         {

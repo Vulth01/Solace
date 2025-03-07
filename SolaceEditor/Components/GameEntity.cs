@@ -46,7 +46,7 @@ namespace SolaceEditor.Components
                         EntityID = EngineAPI.CreateGameEntity(this);
                         Debug.Assert(ID.IsValid(_entityID));
                     }
-                    else
+                    else if(ID.IsValid(EntityID))
                     {
                         EngineAPI.RemoveGameEntity(this);
                     }
@@ -122,8 +122,7 @@ namespace SolaceEditor.Components
         // Enables updates to selected entities
         private bool _enableUpdates = true;
 
-        private bool? _isEnabled = true;
-        [DataMember]
+        private bool? _isEnabled;
         public bool? IsEnabled
         {
             get => _isEnabled;
@@ -137,9 +136,7 @@ namespace SolaceEditor.Components
             }
         }
 
-
         private string _name;
-        [DataMember]
         public string Name
         {
             get => _name;
@@ -156,7 +153,30 @@ namespace SolaceEditor.Components
         private readonly ObservableCollection<IMSComponent> _components = new ObservableCollection<IMSComponent>();
         public ReadOnlyObservableCollection<IMSComponent> Components { get; }
 
+        public T GetMSComponent<T>() where T : IMSComponent
+        {
+            return (T)Components.FirstOrDefault(x => x.GetType() == typeof(T));
+        }
         public List<GameEntity> SelectedEntities { get; }
+
+        private void MakeComponentList()
+        {
+            _components.Clear();
+            var firstEntity = SelectedEntities.FirstOrDefault();
+            if (firstEntity == null) return;
+
+            foreach (var component in firstEntity.Components)
+            {
+                var type = component.GetType();
+                if (SelectedEntities.Skip(1).Any(entity => entity.GetComponent(type) == null))
+                {
+                    Debug.Assert(Components.FirstOrDefault(x => x.GetType() == type) == null);
+                    _components.Add(component.GetMultiselectionComponent(this));
+                }
+            }
+        }
+
+
 
         public static float? GetMixedValue<T>(List<T> objects, Func<T, float> getProperty)
         {
@@ -164,31 +184,16 @@ namespace SolaceEditor.Components
             return objects.Skip(1).Any(x => !getProperty(x).IsTheSameAs(value)) ? (float?)null : value;
         }
 
-        //https://youtu.be/MB56y5wVgoI?t=1030
-        public static bool? GetMixedValue(List<GameEntity> entities, Func<GameEntity, bool> getProperty)
+        public static bool? GetMixedValue<T>(List<T> objects, Func<T, bool> getProperty)
         {
-            var value = getProperty(entities.First());
-            foreach (var entity in entities.Skip(1))
-            {
-                if (value != getProperty(entity))
-                {
-                    return null;
-                }
-            }
-            return value;
+            var value = getProperty(objects.First());
+            return objects.Skip(1).Any(x => value != getProperty(x)) ? (bool?)null : value;
         }
 
-        public static string GetMixedValue(List<GameEntity> entities, Func<GameEntity, string> getProperty)
+        public static string GetMixedValue<T>(List<T> objects, Func<T, string> getProperty)
         {
-            var value = getProperty(entities.First());
-            foreach (var entity in entities.Skip(1))
-            {
-                if (value != getProperty(entity))
-                {
-                    return null;
-                }
-            }
-            return value;
+            var value = getProperty(objects.First());
+            return objects.Skip(1).Any(x => value != getProperty(x)) ? null : value;
         }
 
 
@@ -214,6 +219,7 @@ namespace SolaceEditor.Components
         {
             _enableUpdates = false;
             UpdateMSGameEntity();
+            MakeComponentList();
             _enableUpdates = true;
         }
 

@@ -47,3 +47,7 @@ C:\Solace\x64\Debug\SolaceEditor.runtimeconfig.json
 C:\Solace\x64\Debug\SolaceEditor.dll
 C:\Solace\x64\Debug\SolaceEditor.pdb
 C:\Solace\SolaceEditor\obj\Debug\Dictionaries\EditorColours.baml
+C:\Solace\SolaceEditor\obj\Debug\Editors\WorldEditor\ComponentView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\Editors\WorldEditor\TransformView.g.cs
+C:\Solace\SolaceEditor\obj\Debug\Editors\WorldEditor\ComponentView.baml
+C:\Solace\SolaceEditor\obj\Debug\Editors\WorldEditor\TransformView.baml

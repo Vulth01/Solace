@@ -14,6 +14,7 @@ namespace SolaceEditor.Components
     [DataContract]
     abstract class Component : ViewModelBase
     {
+        public abstract IMSComponent GetMultiselectionComponent(MSEntity msEntity);
         [DataMember] 
         public GameEntity Owner { get; private set; }
 
@@ -30,13 +31,13 @@ namespace SolaceEditor.Components
         public List<T> SelectedComponents { get; }
 
         protected abstract bool UpdateComponents(string propertyName);
-        protected abstract bool UpdateMSComponents();
+        protected abstract bool UpdateMSComponent();
 
 
         public void Refresh()
         {
             _enableUpdates = false;
-            UpdateMSComponents();
+            UpdateMSComponent();
             _enableUpdates = true;
         }
 
