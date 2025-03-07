@@ -19,10 +19,10 @@ namespace SolaceEditor.Utilities.Controls
 
         public double Multiplier
         {
-            get => (double)GetValue(MultiplierValueProperty);
-            set => SetValue(MultiplierValueProperty, value);
+            get => (double)GetValue(MultiplierProperty);
+            set => SetValue(MultiplierProperty, value);
         }
-        public static readonly DependencyProperty MultiplierValueProperty =
+        public static readonly DependencyProperty MultiplierProperty =
             DependencyProperty.Register(nameof(Multiplier), typeof(double), typeof(NumberBox),
                 new PropertyMetadata(1.0));
 
@@ -60,10 +60,10 @@ namespace SolaceEditor.Utilities.Controls
             _captured = true;
             _valueChanged = false;
             e.Handled = true;
-
             _mouseXStart = e.GetPosition(this).X;
+            Focus();
         }
-        
+
         private void OnTextBlock_Mouse_LBU(object sender, MouseButtonEventArgs e)
         {
 
@@ -91,8 +91,9 @@ namespace SolaceEditor.Utilities.Controls
                 if(Math.Abs(d) > SystemParameters.MinimumHorizontalDragDistance)
                 {
                     if (Keyboard.Modifiers.HasFlag(ModifierKeys.Control)) _multiplier = 0.001;
-                    if (Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)) _multiplier = 0.1;
+                    else if (Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)) _multiplier = 0.1;
                     else _multiplier = 0.01;
+
                     var newValue = _originalValue + (d * _multiplier * Multiplier);
                     Value = newValue.ToString("0.#####");
                     _valueChanged = true;

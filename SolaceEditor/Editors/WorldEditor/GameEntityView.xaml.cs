@@ -31,7 +31,7 @@ namespace SolaceEditor.Editors
             InitializeComponent();
             DataContext = null;
             Instance = this;
-            DataContextChanged += (_,__)=>
+            DataContextChanged += (_, __) =>
             {
               if(DataContext != null)
                 {
@@ -63,6 +63,7 @@ namespace SolaceEditor.Editors
 
         private void OnName_TextBox_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
+            _propertyName = string.Empty;
             _undoAction = GetRenameAction();
         }
 

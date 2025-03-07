@@ -4,11 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SolaceEditor.Editors"
+             xmlns:vm="clr-namespace:SolaceEditor.Components"
              mc:Ignorable="d" 
              d:DesignHeight="450" 
-             d:DesignWidth="800"
-             >
+             d:DesignWidth="800">
 
+
+    <UserControl.Resources >
+        <DataTemplate DataType="{x:Type vm:MSTransform}">
+            <local:TransformView/>
+        </DataTemplate>
+    </UserControl.Resources>
 
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <ScrollViewer.Style>
@@ -45,25 +51,18 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text= "Name" 
-                       Grid.Column="0" 
-                       Margin="5,0,0,0"/>
-            <TextBox Text="{Binding Name, UpdateSourceTrigger=Explicit}" 
+            <TextBlock Text= "Name" Grid.Column="0" Margin="5,0,0,0"/>
+                <TextBox Text="{Binding Name, UpdateSourceTrigger=Explicit}" Grid.Column="1"
                      GotKeyboardFocus="OnName_TextBox_GotKeyboardFocus"
-                     LostKeyboardFocus="OnName_TextBox_LostKeyboardFocus"
-                     Grid.Column="1"/>
-            <StackPanel Orientation="Horizontal" 
-                        Grid.Column="2">
-                <TextBlock Text="Enabled" 
-                           Margin="5,0,0,0"/>
+                     LostKeyboardFocus="OnName_TextBox_LostKeyboardFocus"/>
+            <StackPanel Orientation="Horizontal" Grid.Column="2">
+                <TextBlock Text="Enabled" Margin="5,0,0,0"/>
                 <CheckBox IsChecked="{Binding IsEnabled, Mode=OneWay}"
                           Click="OnIsEnabled_CheckBox_Click"
-                          Margin="5,0" 
-                          VerticalAlignment="Center"/>
+                          Margin="5,0" VerticalAlignment="Center"/>
             </StackPanel>
         </Grid>
-        <ItemsControl ItemsSource="{Binding Components}"  
-                      Foreground="White">
+        <ItemsControl ItemsSource="{Binding Components}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel />

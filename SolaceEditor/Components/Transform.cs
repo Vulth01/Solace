@@ -61,9 +61,10 @@ namespace SolaceEditor.Components
             }
         }
 
-        public Transform(GameEntity owner) : base(owner) 
-        {
-        }
+        public override IMSComponent GetMultiselectionComponent(MSEntity mSEntity) => new MSTransform(mSEntity);
+
+        public Transform(GameEntity owner) : base(owner) { }
+
     }
 
     sealed class MSTransform : MSComponent<Transform>
@@ -156,8 +157,8 @@ namespace SolaceEditor.Components
         }
 
         /*              SCALE               */
-        private float _scaleX;
-        public float ScaleX
+        private float? _scaleX;
+        public float? ScaleX
         {
             get => _scaleX;
             set
@@ -165,13 +166,13 @@ namespace SolaceEditor.Components
                 if (!_scaleX.IsTheSameAs(value))
                 {
                     _scaleX = value;
-                    OnPropertyChanged(nameof(scaleX));
+                    OnPropertyChanged(nameof(ScaleX));
                 }
             }
         }
 
-        private float _scaleY;
-        public float ScaleY
+        private float? _scaleY;
+        public float? ScaleY
         {
             get => _scaleY;
             set
@@ -179,13 +180,13 @@ namespace SolaceEditor.Components
                 if (!_scaleY.IsTheSameAs(value))
                 {
                     _scaleY = value;
-                    OnPropertyChanged(nameof(scaleY));
+                    OnPropertyChanged(nameof(ScaleY));
                 }
             }
         }
 
-        private float _scaleZ;
-        public float ScaleZ
+        private float? _scaleZ;
+        public float? ScaleZ
         {
             get => _scaleZ;
             set
@@ -193,7 +194,7 @@ namespace SolaceEditor.Components
                 if (!_scaleZ.IsTheSameAs(value))
                 {
                     _scaleZ = value;
-                    OnPropertyChanged(nameof(scaleZ));
+                    OnPropertyChanged(nameof(ScaleZ));
                 }
             }
         }
@@ -216,23 +217,42 @@ namespace SolaceEditor.Components
                 case nameof(RotX):
                 case nameof(RotY):
                 case nameof(RotZ):
-                    SelectedComponents.ForEach(c => c.Rotation = new Vector3(_posX ?? c.Rotation.X, _posY ?? c.Rotation.Y, _posZ ?? c.Rotation.Z));
+                    SelectedComponents.ForEach(c => c.Rotation = new Vector3(_rotX ?? c.Rotation.X, _rotY ?? c.Rotation.Y, _rotZ ?? c.Rotation.Z));
                     return true;
 
                 case nameof(ScaleX):
                 case nameof(ScaleY):
                 case nameof(ScaleZ):
-                    SelectedComponents.ForEach(c => c.Scale = new Vector3(_posX ?? c.Scale.X, _posY ?? c.Scale.Y, _posZ ?? c.Scale.Z));
+                    SelectedComponents.ForEach(c => c.Scale = new Vector3(_scaleX ?? c.Scale.X, _scaleY ?? c.Scale.Y, _scaleZ ?? c.Scale.Z));
                     return true;
 
             }
             return false;
         }
 
-        protected override bool UpdateMSComponents()
+        protected override bool UpdateMSComponent()
         {
             PosX = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Position.X));
+            PosY = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Position.Y));
+            PosZ = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Position.Z));
+
+            RotX = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Rotation.X));
+            RotY = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Rotation.Y));
+            RotZ = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Rotation.Z));
+
+            ScaleX = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Scale.X));
+            ScaleY = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Scale.Y));
+            ScaleZ = MSEntity.GetMixedValue(SelectedComponents, new Func<Transform, float>(x => x.Scale.Z));
+
+            return true;
+
         }
+
+        public MSTransform(MSEntity msEntity) : base(msEntity)
+        {
+            Refresh();
+        }
+
 
     }
 
